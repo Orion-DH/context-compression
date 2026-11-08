@@ -268,8 +268,7 @@
   ],
   "scenario": [
    "多轮对话",
-   "流式视频",
-   "文档与 GUI"
+   "流式视频"
   ],
   "summary": "CogStream 的 CogReasoner 结合视觉流压缩与历史对话检索，筛选当前流视频问题需要的历史上下文。",
   "added": "2026-11-08"
@@ -391,9 +390,7 @@
   "mechanism": [
    "合并聚类"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "D3ToM 面向扩散 MLLM，以前一步生成 token 引导重要性，动态合并冗余视觉 token，并缩短后续层序列。",
   "added": "2026-11-08"
  },
@@ -520,9 +517,7 @@
    "筛选剪枝",
    "合并聚类"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "ICCTP 保留少量全局 token，再以指令中的名词锚点跨模态聚类，按重要性和多样性进行组内剪枝。",
   "added": "2026-11-08"
  },
@@ -552,9 +547,7 @@
    "图像"
   ],
   "mechanism": [],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "将图像压成短视觉提示以激活图像知识，同时用小波分层视觉特征提供细节；减少直接注入的冗长视觉提示。",
   "added": "2026-11-08"
  },
@@ -1577,8 +1570,7 @@
   ],
   "mechanism": [],
   "scenario": [
-   "多轮对话",
-   "文档与 GUI"
+   "多轮对话"
   ],
   "summary": "Attn-GS 用标记模型的注意力找出个性化关键句，再引导压缩模型生成任务相关的短用户上下文。",
   "added": "2026-11-08"
@@ -2465,9 +2457,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "SCTS 用稀疏自编码器分离视觉语义概念，再以最大概念覆盖逐次选择具有独特信息的 token。",
   "added": "2026-11-08"
  },
@@ -2527,9 +2517,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "Vista-LLM 在进入主模型前按查询分配时间预算、选择细粒度 token 并补偿结构信息，减少视觉冗余。",
   "added": "2026-11-08"
  },
@@ -4028,9 +4016,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "MoPrune 按场景划分视频，再联合帧独特性与运动显著性控制逐帧和逐 token 保留。",
   "added": "2026-11-08"
  },
@@ -4620,9 +4606,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "ApET 以少量基 token 线性重建原始视觉表示，通过近似误差识别可删除 token；不依赖注意力权重，兼容 FlashAttention。",
   "added": "2026-11-08"
  },
@@ -4652,10 +4636,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "RAG",
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "CoIn 联合优化信息量与覆盖度，选择具有视觉显著性、文本相关性及全局代表性的 token 子集。",
   "added": "2026-11-08"
  },
@@ -4742,9 +4723,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "EvoComp 训练轻量压缩器选择信息丰富、低冗余的视觉 token，并用语义引导的进化子集搜索生成监督标签。",
   "added": "2026-11-08"
  },
@@ -4865,9 +4844,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "IF-Prune 让小 VLM 通过变分信息瓶颈识别与问题无关的视觉 token，为大 VLM 提供裁剪指导。",
   "added": "2026-11-08"
  },
@@ -4927,9 +4904,7 @@
    "筛选剪枝",
    "合并聚类"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "QuietPrune 把文本问题映射成视觉域查询 token，在视觉编码器内按空间组提前裁剪，并把冗余 token 聚合以保留上下文线索。",
   "added": "2026-11-08"
  },
@@ -4992,9 +4967,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "SCoRe 将视觉 token 裁剪表述为加权 k-Center 代表性优化，联合显著性和覆盖度，避免只保留单一语义簇。",
   "added": "2026-11-08"
  },
@@ -5389,9 +5362,7 @@
   "mechanism": [
    "合并聚类"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "MeToM 利用编码残差和 GoP 大小估计信息密度，在视觉编码阶段合并 token、跨帧分配预算，并在 LLM 内继续合并。",
   "added": "2026-11-08"
  },
@@ -5419,9 +5390,7 @@
    "音频"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "OmniZip 利用音频显著性与跨模态相似度动态分配视频 token 预算，再进行交错时空压缩；压缩对象同时包含音频和视频。",
   "added": "2026-11-08"
  },
@@ -5446,9 +5415,7 @@
    "视频"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "QViC-MF 利用问题引导的选择注意力，从当前片段与历史记忆中保留相关视觉信息；压缩器和记忆反馈逐片段迭代。",
   "added": "2026-11-08"
  },
@@ -5746,9 +5713,7 @@
   "mechanism": [
    "摘要改写"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "FlashCache 从频域识别偏离主要能量分布的关键 Outlier KV，优先保留并动态分配各层缓存预算；摘要报告 KV 内存减少 80%。",
   "added": "2026-11-08"
  },
@@ -6073,9 +6038,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "Geo3DPruner 先在体素内部选取多视角代表特征，再跨体素保留空间多样性，压缩 3D 空间视频的视觉 token。",
   "added": "2026-11-08"
  },
@@ -6539,9 +6502,7 @@
   "mechanism": [
    "量化"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "SketchRevive 用线条预测 logits 引导 MLLM 视觉 token 压缩，保留草图矢量化所需信息；压缩是任务框架中的组件，非论文唯一主线。",
   "added": "2026-11-08"
  },
@@ -6567,9 +6528,7 @@
    "图像"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "TFGC 通过语义对齐让 LVLM 直接消费压缩 token、无需图像重建。它兼顾图像码率压缩和模型输入表示压缩；码率下降不等同于上下文 token 数同比下降。",
   "added": "2026-11-08"
  },
@@ -6882,9 +6841,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "FlashVLM 在 LLM 表示空间直接计算图文相关性，融合视觉显著性，并保留具有多样性的少量背景 token。",
   "added": "2026-11-08"
  },
@@ -7030,9 +6987,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "CLSE 用跨层频谱变化判断视觉 token 的语义活跃度，减少单层重要性指标和位置偏差导致的误剪。",
   "added": "2026-11-08"
  },
@@ -7058,9 +7013,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "SFPruner 将冗余约束融入评分，以语义引导的 ridge leverage 和方向掩码并行选 token，降低迭代子集优化开销。",
   "added": "2026-11-08"
  },
@@ -7223,9 +7176,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "EventSTU 用事件信号引导粗到细关键帧采样和空间剪枝，并按问题相关性分配 token 预算；支持物理或模拟事件输入。",
   "added": "2026-11-08"
  },
@@ -7257,9 +7208,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "GTR 先以全局与文本感知得分决定逐帧保留比例，再用帧内局部重要性选择视觉 token，实现两阶段免训练压缩。",
   "added": "2026-11-08"
  },
@@ -7881,9 +7830,7 @@
    "视频"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "STVFocus 联合层级时间选择与查询引导空间聚焦，并把节省的空间预算重新分配给更多高价值帧；重点是预算内证据重分配。",
   "added": "2026-11-08"
  },
@@ -7944,9 +7891,7 @@
   "mechanism": [
    "合并聚类"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "3DZip 先粗体素化，再以行列式点过程选多样性锚点，最后在空间约束下合并剩余 token，保持三维几何一致性。",
   "added": "2026-11-08"
  },
@@ -7978,9 +7923,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "CoverPrune 以最优传输覆盖原始三维证据，用特征—空间—时间代价及空间引导贪心选择 token，避免只追求多样性而留下离群点。",
   "added": "2026-11-08"
  },
@@ -8044,9 +7987,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "MemTree3D 构建紧凑可复用三维场景记忆树，让 LLM 查询相关关键帧而不重复搜索全视频；属于场景索引和输入选择。",
   "added": "2026-11-08"
  },
@@ -8172,7 +8113,6 @@
    "筛选剪枝"
   ],
   "scenario": [
-   "文档与 GUI",
    "机器人"
   ],
   "summary": "SAFE-Pruner 利用跨控制时刻的语义注意力一致性预测深层重要性，减少 VLA 视觉 token 误剪，并在注意力变化时刷新参考。",
@@ -9226,9 +9166,7 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "DTP 为 Mamba 多模态模型设计由内部参数引导的两阶段视觉 token 剪枝：早层选择性剪枝、晚层完整剪除。",
   "added": "2026-11-08"
  },
@@ -9522,9 +9460,7 @@
    "图像"
   ],
   "mechanism": [],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "MMTok 以最大覆盖目标选择视觉子集，同时覆盖原视觉信息和文本指令，兼顾两种模态。",
   "added": "2026-11-08"
  },
@@ -9617,9 +9553,7 @@
   "mechanism": [
    "合并聚类"
   ],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "PPLLaVA 通过指令引导的池化将视觉序列压缩到可调规模，并聚合查询相关视觉特征。",
   "added": "2026-11-08"
  },
@@ -9762,9 +9696,7 @@
    "视频"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "SURGE 以近期历史对 token 的预测误差衡量惊讶度，保留新信息并剪去可预测冗余，可结合查询相关性。",
   "added": "2026-11-08"
  },
@@ -10195,9 +10127,7 @@
    "合并聚类",
    "淘汰"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "DefensiveKV 用控制最坏风险的聚合策略指导驱逐，Layer-DefensiveKV 再分配层级预算，提高小缓存下的稳健性。",
   "added": "2026-11-08"
  },
@@ -10251,9 +10181,7 @@
    "量化",
    "低秩重构"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "KVTC 结合 PCA 去相关、自适应量化和熵编码，压缩推理缓存的存储表示；编码／解码成本及缓存驻留位置需单独核算。",
   "added": "2026-11-08"
  },
@@ -10974,8 +10902,7 @@
    "按需检索"
   ],
   "scenario": [
-   "长文档",
-   "RAG"
+   "长文档"
   ],
   "summary": "SCOUT 将超长文档作为可探索环境，把证据压缩进可追溯的紧凑认知状态，并按问题充分性持续收缩该状态；超出单纯检索范畴。",
   "added": "2026-11-08"
@@ -12107,8 +12034,7 @@
    "淘汰"
   ],
   "scenario": [
-   "长推理",
-   "文档与 GUI"
+   "长推理"
   ],
   "summary": "BeaconKV 维护代表全局查询簇的 beacon queries，预测长推理中将被重新关注的历史 KV，避免只根据近期查询错误淘汰。",
   "added": "2026-11-08"
@@ -12196,9 +12122,7 @@
    "文本"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "EntroKV 以注意力熵估计压缩敏感性，在层、头及任务之间动态分配缓存预算，可与不同压缩算子结合。",
   "added": "2026-11-08"
  },
@@ -12544,9 +12468,7 @@
    "文本"
   ],
   "mechanism": [],
-  "scenario": [
-   "文档与 GUI"
-  ],
+  "scenario": [],
   "summary": "RLKV 用强化学习识别支撑推理与终止判断的关键注意力头，给关键头完整缓存，其他头压缩为常量规模缓存。",
   "added": "2026-11-08"
  },
@@ -12743,7 +12665,6 @@
    "低秩重构"
   ],
   "scenario": [
-   "RAG",
    "Agent"
   ],
   "summary": "LRAgent 将多 LoRA Agent 的 KV 分成共享基础项和适配器低秩项，避免重复存储，并用专用注意力计算减少全维重构。",
