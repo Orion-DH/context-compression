@@ -42,7 +42,8 @@
       return { key, label, options: options.map((value) => ({ value })) };
     };
     facets = [
-      derived("venue", "会议", (a, b) => a.localeCompare(b)),
+      derived("source", "来源", (a, b) => taxonomy.sources.indexOf(a) - taxonomy.sources.indexOf(b)),
+      derived("venue", "发表渠道", (a, b) => a.localeCompare(b)),
       derived("track", "录用类型", (a, b) => taxonomy.trackOrder.indexOf(a) - taxonomy.trackOrder.indexOf(b)),
       ...taxonomy.facets,
     ];
@@ -75,6 +76,7 @@
   const sorted = (list) => {
     const compare = {
       default: () => 0,
+      hf: (a, b) => (b.hfDate || "").localeCompare(a.hfDate || ""),
       award: (a, b) => (AWARD_RANK[a.track] ?? 9) - (AWARD_RANK[b.track] ?? 9),
       title: (a, b) => String(a.title).localeCompare(String(b.title)),
     }[state.sort];
@@ -139,7 +141,9 @@
     const link = safeUrl(p.url);
     const actions = [
       safeUrl(p.pdf) && `<a class="btn primary" href="${esc(p.pdf)}" target="_blank" rel="noopener">${/openreview\.net/.test(p.pdf) ? "OpenReview" : "PDF"}</a>`,
-      link && `<a class="btn" href="${esc(link)}" target="_blank" rel="noopener">官方页面</a>`,
+      link && p.venue !== "HF Daily" && `<a class="btn" href="${esc(link)}" target="_blank" rel="noopener">官方页面</a>`,
+      safeUrl(p.hf) && `<a class="btn" href="${esc(p.hf)}" target="_blank" rel="noopener">HF 页面</a>`,
+      safeUrl(p.arxiv) && `<a class="btn" href="${esc(p.arxiv)}" target="_blank" rel="noopener">arXiv</a>`,
       safeUrl(p.code) && `<a class="btn" href="${esc(p.code)}" target="_blank" rel="noopener">代码</a>`,
     ].filter(Boolean).join("");
     const authors = p.authors || [];
@@ -148,7 +152,8 @@
       [p.category, p.branch].filter(Boolean).map(esc).join(" / "),
       esc(authorText),
       esc(p.venue),
-      AWARD_RANK[p.track] !== undefined ? `<span class="award">${esc(p.track)}</span>` : esc(p.track),
+      p.track === p.venue ? "" : AWARD_RANK[p.track] !== undefined ? `<span class="award">${esc(p.track)}</span>` : esc(p.track),
+      p.hfDate ? `HF 收录 ${esc(p.hfDate)}` : "",
       esc(p.relevance),
     ].filter(Boolean).join(" · ");
     const rows = taxonomy.facets.map((f) => {
