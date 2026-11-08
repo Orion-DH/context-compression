@@ -6,9 +6,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-REQUIRED = ["id", "title", "authors", "year", "venue", "track", "relevance", "url", "category", "branch", "summary", "added"]
+REQUIRED = ["id", "title", "authors", "year", "venue", "track", "relevance", "source", "url", "category", "branch", "summary", "added"]
 NOTE_KEYS = {"method", "evidence", "assumptions", "limitations", "related"}
-TOP_KEYS = set(REQUIRED) | {"pdf", "code", "modality", "mechanism", "scenario", "notes"}
+TOP_KEYS = set(REQUIRED) | {"source", "pdf", "code", "hf", "arxiv", "hfDate", "modality", "mechanism", "scenario", "notes"}
 OTHER_RELEVANCE = "其他录用类型"
 
 
@@ -20,13 +20,15 @@ def check(paper, taxonomy):
         errors.append(f"relevance 无效：{paper.get('relevance')}")
     if paper.get("track") not in taxonomy["trackOrder"]:
         errors.append(f"track 无效：{paper.get('track')}")
+    if not set(paper.get("source", [])) <= set(taxonomy["sources"]) or not paper.get("source"):
+        errors.append(f"source 无效：{paper.get('source')}")
     if not isinstance(paper.get("year"), int):
         errors.append("year 必须是整数")
     if not isinstance(paper.get("authors"), list):
         errors.append("authors 必须是数组")
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(paper.get("added", ""))):
         errors.append("added 必须是 YYYY-MM-DD")
-    for key in ("url", "pdf", "code"):
+    for key in ("url", "pdf", "code", "hf", "arxiv"):
         if key in paper and not str(paper[key]).startswith(("http://", "https://")):
             errors.append(f"{key} 必须是 http(s) 链接")
 
