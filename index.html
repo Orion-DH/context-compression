@@ -12,8 +12,8 @@
     <div class="topbar-left">
       <button class="icon-btn only-mobile" id="toggle-filters" aria-label="打开筛选">☰ 筛选</button>
       <h1>上下文压缩论文库</h1>
-      <nav class="sections" id="sections" aria-label="论文状态"></nav>
-      <span class="subtitle">Context Compression · 提示压缩 / Agent 上下文 / 模型内部 / KV 缓存</span>
+      <nav class="sections" id="sections" aria-label="相关性"></nav>
+      <span class="subtitle">Context Compression · 文本 / Agent 记忆 / 潜在表示 / 视觉与视频 / KV Cache</span>
     </div>
     <span class="updated" id="updated"></span>
   </header>
@@ -30,8 +30,7 @@
         <span class="match" id="match"></span>
         <div class="result-actions">
           <select id="sort" aria-label="排序">
-            <option value="added">最近收录</option>
-            <option value="year">年份从新到旧</option>
+            <option value="default">默认排序</option>
             <option value="award">Oral / Spotlight 优先</option>
             <option value="title">按标题</option>
           </select>
