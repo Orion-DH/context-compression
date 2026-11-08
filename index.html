@@ -37,7 +37,35 @@
           <button class="link-btn" id="clear-all" hidden>清空筛选</button>
         </div>
       </div>
+      <p class="hint" id="relevance-note" hidden></p>
       <div class="active-filters" id="active-filters"></div>
+
+      <details class="map" id="legend">
+        <summary>标签说明</summary>
+        <div class="legend">
+          <section>
+            <h3>相关性</h3>
+            <dl id="legend-relevance"></dl>
+            <p>各会议的判定口径略有差异，跨会议比较时仅供参考。“全部”中另含 2 篇学生摘要和本科生论坛条目。</p>
+          </section>
+          <section>
+            <h3>压缩主类</h3>
+            <p>每篇论文只归入一个主类，交叉时依次判断：评测或机理研究；直接压缩 KV Cache；依赖 3D、具身或行业任务约束；其余按被压缩的内容归类。</p>
+          </section>
+          <section>
+            <h3>录用类型</h3>
+            <p>保留各会议的官方标注，所以不同会议的取值不同。例如 Regular 是 ICML 的 Accept (regular)，主技术轨道是 AAAI 的 Technical Track，Findings 是 Findings of ACL。</p>
+          </section>
+          <section>
+            <h3>模态、机制、场景</h3>
+            <p>根据论文说明中的关键词提取，可能漏标或误标，一篇可有多个或没有。需要精确判断时，请以主类、方法分支和论文说明为准。</p>
+          </section>
+          <section>
+            <h3>筛选规则</h3>
+            <p>同一维度内选多项时，满足其一即可；不同维度之间需要同时满足。</p>
+          </section>
+        </div>
+      </details>
 
       <details class="map" id="map">
         <summary>压缩方法地图</summary>
