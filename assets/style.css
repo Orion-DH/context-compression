@@ -55,7 +55,7 @@ button { cursor: pointer; }
 .topbar h1 { margin: 0; font-size: 18px; white-space: nowrap; }
 .subtitle, .updated { color: var(--faint); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .updated { flex-shrink: 0; }
-.sections { display: flex; gap: 2px; padding: 2px; border-radius: 8px; background: var(--chip); }
+.sections { display: flex; gap: 2px; min-width: 0; padding: 2px; border-radius: 8px; background: var(--chip); overflow-x: auto; }
 .sections button { padding: 4px 12px; border: 0; border-radius: 6px; background: none; color: var(--muted); font-size: 13px; white-space: nowrap; }
 .sections button:hover { color: var(--text); }
 .sections button.on { background: var(--panel); color: var(--text); font-weight: 600; box-shadow: var(--shadow); }
@@ -101,7 +101,16 @@ button { cursor: pointer; }
 .active-filters:empty { display: none; }
 .active-filters .chip { background: var(--panel); border-color: var(--line); }
 
-.map { margin-bottom: 16px; }
+.hint { margin: 0 0 12px; padding: 8px 12px; border-radius: 8px; background: var(--chip); color: var(--muted); font-size: 12px; }
+.hint b { color: var(--text); font-weight: 600; }
+.legend { display: grid; gap: 14px; margin-top: 8px; padding: 14px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; color: var(--muted); font-size: 12px; }
+.legend h3 { margin: 0 0 4px; color: var(--text); font-size: 13px; }
+.legend p { margin: 0; }
+.legend dl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 0 0 6px; }
+.legend dt { color: var(--text); font-weight: 600; }
+.legend dd { margin: 0; }
+.map { margin-bottom: 4px; }
+#map { margin-bottom: 16px; }
 .map summary { padding: 6px 0; font-weight: 600; cursor: pointer; list-style: none; }
 .map summary::-webkit-details-marker { display: none; }
 .map summary::before { content: "›"; display: inline-block; width: 16px; transition: transform .15s; }
@@ -195,7 +204,11 @@ button { cursor: pointer; }
   .card-head { flex-direction: column; gap: 10px; }
   .rows { grid-template-columns: minmax(0, 1fr); gap: 2px; }
   .rows .k { padding-top: 6px; }
+  .legend dl { grid-template-columns: minmax(0, 1fr); }
+  .legend dd { margin-bottom: 4px; }
 }
 @media (max-width: 480px) {
   .topbar h1 { display: none; }
+  .sections button { padding: 4px 8px; }
+  .sections .n { display: none; }
 }

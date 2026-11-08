@@ -51,6 +51,7 @@
       f.options.forEach((o) => { if (o.hue) hueOf.set(`${f.key}:${o.value}`, o.hue); });
     });
     readHash();
+    renderLegend();
     const latest = papers.map((p) => p.added || "").sort().pop();
     $("updated").textContent = `${latest ? `更新于 ${latest} · ` : ""}共 ${papers.length} 篇`;
     render();
@@ -85,7 +86,19 @@
     const count = (s) => pool.filter((p) => p.relevance === s).length;
     const items = [["", "全部", pool.length], ...taxonomy.relevances.map((s) => [s, s, count(s)])];
     $("sections").innerHTML = items.map(([v, label, n]) => (
-      `<button class="${state.relevance === v ? "on" : ""}" data-relevance="${esc(v)}">${esc(label)} <span class="n">${n}</span></button>`
+      `<button class="${state.relevance === v ? "on" : ""}" data-relevance="${esc(v)}"${taxonomy.relevanceNotes[v] ? ` title="${esc(taxonomy.relevanceNotes[v])}"` : ""}>${esc(label)} <span class="n">${n}</span></button>`
+    )).join("");
+  }
+
+  function renderRelevanceNote() {
+    const note = taxonomy.relevanceNotes[state.relevance];
+    $("relevance-note").hidden = !note;
+    $("relevance-note").innerHTML = note ? `<b>${esc(state.relevance)}：</b>${esc(note)}` : "";
+  }
+
+  function renderLegend() {
+    $("legend-relevance").innerHTML = taxonomy.relevances.map((r) => (
+      `<dt>${esc(r)}</dt><dd>${esc(taxonomy.relevanceNotes[r])}</dd>`
     )).join("");
   }
 
@@ -194,6 +207,7 @@
         ? '<p class="empty">没有符合条件的论文。</p>'
         : '<p class="empty">还没有收录论文。<small>论文写入 data/papers.json 后会显示在这里。</small></p>';
     renderSections();
+    renderRelevanceNote();
     renderFacets();
     renderMap();
     renderActive();
