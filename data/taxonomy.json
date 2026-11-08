@@ -1,0 +1,76 @@
+{
+  "statuses": ["已发表", "预印本"],
+  "awards": ["Best", "Oral", "Spotlight", "Highlight"],
+  "categories": [
+    {
+      "name": "输入与提示压缩",
+      "branches": ["提示词 Token 删减", "句子与段落抽取", "摘要式重写", "检索结果压缩"]
+    },
+    {
+      "name": "对话与 Agent 上下文",
+      "branches": ["滚动摘要", "分层与长期记忆", "工具输出裁剪", "轨迹压缩与上下文折叠"]
+    },
+    {
+      "name": "模型内部压缩",
+      "branches": ["Token 剪枝与合并", "注意力与隐状态压缩", "压缩型记忆 Token", "递归与分块处理"]
+    },
+    {
+      "name": "KV 缓存管理",
+      "branches": ["缓存淘汰", "缓存量化与编码", "滑动窗口", "缓存复用"]
+    },
+    {
+      "name": "多模态长上下文",
+      "branches": ["视频帧与视觉 Token 压缩", "长音频压缩", "跨模态记忆"]
+    },
+    {
+      "name": "评测与理论",
+      "branches": ["压缩基准与数据集", "信息保留度量", "压缩上下界与分析"]
+    }
+  ],
+  "facets": [
+    {
+      "key": "location",
+      "label": "压缩位置",
+      "options": [
+        { "value": "模型输入前", "hue": "Blue" },
+        { "value": "模型内部", "hue": "Purple" },
+        { "value": "推理缓存", "hue": "Orange" },
+        { "value": "外部记忆", "hue": "Turquoise" }
+      ]
+    },
+    {
+      "key": "retention",
+      "label": "保留方式",
+      "options": [
+        { "value": "抽取原文", "hue": "Wathet" },
+        { "value": "生成摘要", "hue": "Green" },
+        { "value": "潜在表示", "hue": "Purple" },
+        { "value": "选择性丢弃", "hue": "Red" },
+        { "value": "量化编码", "hue": "Yellow" }
+      ]
+    },
+    {
+      "key": "goal",
+      "label": "优化目标",
+      "options": [
+        { "value": "减少 Token", "hue": "Blue" },
+        { "value": "降低内存", "hue": "Orange" },
+        { "value": "降低延迟", "hue": "Lime" },
+        { "value": "提升长程准确率", "hue": "Carmine" },
+        { "value": "降低调用成本", "hue": "Yellow" }
+      ]
+    },
+    {
+      "key": "scenario",
+      "label": "场景",
+      "options": [
+        { "value": "长文档问答", "hue": "Blue" },
+        { "value": "多轮对话", "hue": "Turquoise" },
+        { "value": "智能体任务", "hue": "Purple" },
+        { "value": "代码理解", "hue": "Green" },
+        { "value": "RAG", "hue": "Orange" },
+        { "value": "视频与音频", "hue": "Carmine" }
+      ]
+    }
+  ]
+}
