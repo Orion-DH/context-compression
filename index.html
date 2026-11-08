@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上下文压缩论文库</title>
+  <meta name="description" content="上下文压缩方向的论文收集与检索">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn only-mobile" id="toggle-filters" aria-label="打开筛选">☰ 筛选</button>
+      <h1>上下文压缩论文库</h1>
+      <nav class="sections" id="sections" aria-label="论文状态"></nav>
+      <span class="subtitle">Context Compression · 提示压缩 / Agent 上下文 / 模型内部 / KV 缓存</span>
+    </div>
+    <span class="updated" id="updated"></span>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <input type="search" id="search" placeholder="搜索题名、作者、方法…" autocomplete="off" aria-label="搜索论文">
+      <div id="facets"></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <main class="content">
+      <div class="result-bar">
+        <span class="match" id="match"></span>
+        <div class="result-actions">
+          <select id="sort" aria-label="排序">
+            <option value="added">最近收录</option>
+            <option value="year">年份从新到旧</option>
+            <option value="award">Oral / Spotlight 优先</option>
+            <option value="title">按标题</option>
+          </select>
+          <button class="link-btn" id="clear-all" hidden>清空筛选</button>
+        </div>
+      </div>
+      <div class="active-filters" id="active-filters"></div>
+
+      <details class="map" id="map">
+        <summary>压缩方法地图</summary>
+        <div class="map-grid" id="map-grid"></div>
+      </details>
+
+      <div id="cards"><p class="empty">正在加载数据…</p></div>
+      <nav class="pager" id="pager" aria-label="翻页"></nav>
+    </main>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
