@@ -6,19 +6,20 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-REQUIRED = ["id", "title", "authors", "year", "venue", "status", "url", "category", "branch", "summary", "added"]
+REQUIRED = ["id", "title", "authors", "year", "venue", "track", "relevance", "url", "category", "branch", "summary", "added"]
 NOTE_KEYS = {"method", "evidence", "assumptions", "limitations", "related"}
-TOP_KEYS = set(REQUIRED) | {"award", "pdf", "code", "location", "retention", "goal", "scenario", "notes"}
+TOP_KEYS = set(REQUIRED) | {"pdf", "code", "modality", "mechanism", "scenario", "notes"}
+OTHER_RELEVANCE = "其他录用类型"
 
 
 def check(paper, taxonomy):
     errors = [f"缺少字段 {k}" for k in REQUIRED if paper.get(k) in (None, "", [])]
     errors += [f"未知字段 {k}" for k in paper if k not in TOP_KEYS]
 
-    if paper.get("status") not in taxonomy["statuses"]:
-        errors.append(f"status 无效：{paper.get('status')}")
-    if "award" in paper and paper["award"] not in taxonomy["awards"]:
-        errors.append(f"award 无效：{paper['award']}")
+    if paper.get("relevance") not in [*taxonomy["relevances"], OTHER_RELEVANCE]:
+        errors.append(f"relevance 无效：{paper.get('relevance')}")
+    if paper.get("track") not in taxonomy["trackOrder"]:
+        errors.append(f"track 无效：{paper.get('track')}")
     if not isinstance(paper.get("year"), int):
         errors.append("year 必须是整数")
     if not isinstance(paper.get("authors"), list):
