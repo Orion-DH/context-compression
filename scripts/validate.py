@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""Check data/papers.json against data/taxonomy.json. Exits 1 if anything is wrong."""
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+REQUIRED = ["id", "title", "authors", "year", "venue", "status", "url", "category", "branch", "summary", "added"]
+NOTE_KEYS = {"method", "evidence", "assumptions", "limitations", "related"}
+TOP_KEYS = set(REQUIRED) | {"award", "pdf", "code", "location", "retention", "goal", "scenario", "notes"}
+
+
+def check(paper, taxonomy):
+    errors = [f"缺少字段 {k}" for k in REQUIRED if paper.get(k) in (None, "", [])]
+    errors += [f"未知字段 {k}" for k in paper if k not in TOP_KEYS]
+
+    if paper.get("status") not in taxonomy["statuses"]:
+        errors.append(f"status 无效：{paper.get('status')}")
+    if "award" in paper and paper["award"] not in taxonomy["awards"]:
+        errors.append(f"award 无效：{paper['award']}")
+    if not isinstance(paper.get("year"), int):
+        errors.append("year 必须是整数")
+    if not isinstance(paper.get("authors"), list):
+        errors.append("authors 必须是数组")
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(paper.get("added", ""))):
+        errors.append("added 必须是 YYYY-MM-DD")
+    for key in ("url", "pdf", "code"):
+        if key in paper and not str(paper[key]).startswith(("http://", "https://")):
+            errors.append(f"{key} 必须是 http(s) 链接")
+
+    categories = {c["name"]: c["branches"] for c in taxonomy["categories"]}
+    if paper.get("category") not in categories:
+        errors.append(f"category 无效：{paper.get('category')}")
+    elif paper.get("branch") not in categories[paper["category"]]:
+        errors.append(f"branch 不属于该 category：{paper.get('branch')}")
+
+    for facet in taxonomy["facets"]:
+        allowed = {o["value"] for o in facet["options"]}
+        values = paper.get(facet["key"], [])
+        if not isinstance(values, list):
+            errors.append(f"{facet['key']} 必须是数组")
+            continue
+        errors += [f"{facet['key']} 取值无效：{v}" for v in values if v not in allowed]
+
+    notes = paper.get("notes", {})
+    if not isinstance(notes, dict):
+        errors.append("notes 必须是对象")
+    else:
+        errors += [f"未知 notes 字段 {k}" for k in notes if k not in NOTE_KEYS]
+    return errors
+
+
+def main():
+    taxonomy = json.loads((ROOT / "data/taxonomy.json").read_text(encoding="utf-8"))
+    papers = json.loads((ROOT / "data/papers.json").read_text(encoding="utf-8"))
+    if not isinstance(papers, list):
+        sys.exit("data/papers.json 顶层必须是数组")
+
+    failed = False
+    seen = set()
+    for index, paper in enumerate(papers):
+        label = paper.get("id") or f"第 {index + 1} 条"
+        errors = check(paper, taxonomy)
+        if paper.get("id") in seen:
+            errors.append("id 重复")
+        seen.add(paper.get("id"))
+        for error in errors:
+            failed = True
+            print(f"[{label}] {error}")
+
+    if failed:
+        sys.exit(1)
+    print(f"通过校验：{len(papers)} 篇论文")
+
+
+if __name__ == "__main__":
+    main()
