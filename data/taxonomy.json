@@ -1,75 +1,227 @@
 {
-  "statuses": ["已发表", "预印本"],
-  "awards": ["Best", "Oral", "Spotlight", "Highlight"],
+  "relevances": [
+    "核心方法",
+    "扩展相关",
+    "分析研究"
+  ],
+  "trackOrder": [
+    "主会",
+    "主技术轨道",
+    "Oral",
+    "Spotlight",
+    "Poster",
+    "Regular",
+    "Findings",
+    "Industry",
+    "SRW",
+    "学生摘要",
+    "本科生论坛"
+  ],
   "categories": [
     {
-      "name": "输入与提示压缩",
-      "branches": ["提示词 Token 删减", "句子与段落抽取", "摘要式重写", "检索结果压缩"]
+      "name": "文本与检索上下文",
+      "branches": [
+        "提示词删减",
+        "抽取与摘要式压缩",
+        "软上下文压缩",
+        "RAG 文档压缩",
+        "重排与检索表示压缩"
+      ]
     },
     {
-      "name": "对话与 Agent 上下文",
-      "branches": ["滚动摘要", "分层与长期记忆", "工具输出裁剪", "轨迹压缩与上下文折叠"]
+      "name": "Agent 历史与工作记忆",
+      "branches": [
+        "轨迹压缩",
+        "推理历史压缩",
+        "工具输出裁剪",
+        "结构化记忆",
+        "经验蒸馏"
+      ]
     },
     {
-      "name": "模型内部压缩",
-      "branches": ["Token 剪枝与合并", "注意力与隐状态压缩", "压缩型记忆 Token", "递归与分块处理"]
+      "name": "潜在表示与跨模态记忆",
+      "branches": [
+        "软提示与压缩 token",
+        "固定容量与多模态记忆",
+        "线性或循环架构",
+        "文本转图像"
+      ]
     },
     {
-      "name": "KV 缓存管理",
-      "branches": ["缓存淘汰", "缓存量化与编码", "滑动窗口", "缓存复用"]
+      "name": "图像视觉 token",
+      "branches": [
+        "Token 剪枝",
+        "Token 合并与聚类",
+        "分词器重设计",
+        "指令引导聚焦",
+        "文档与 GUI"
+      ]
     },
     {
-      "name": "多模态长上下文",
-      "branches": ["视频帧与视觉 Token 压缩", "长音频压缩", "跨模态记忆"]
+      "name": "视频与音视频",
+      "branches": [
+        "时空 token 压缩",
+        "关键帧选择",
+        "主动证据获取",
+        "流式视频记忆",
+        "音视频联合压缩"
+      ]
     },
     {
-      "name": "评测与理论",
-      "branches": ["压缩基准与数据集", "信息保留度量", "压缩上下界与分析"]
+      "name": "3D、具身与领域专用",
+      "branches": [
+        "3D 空间理解",
+        "导航",
+        "机器人操作",
+        "自动驾驶",
+        "其他领域专用"
+      ]
+    },
+    {
+      "name": "KV Cache",
+      "branches": [
+        "淘汰与保留",
+        "预算分配",
+        "量化",
+        "低秩与紧凑重构",
+        "共享与复用",
+        "潜在注意力"
+      ]
+    },
+    {
+      "name": "评测、机理与可靠性",
+      "branches": [
+        "基准",
+        "保真、鲁棒与安全",
+        "机理分析与综述"
+      ]
     }
   ],
   "facets": [
     {
-      "key": "location",
-      "label": "压缩位置",
+      "key": "modality",
+      "label": "模态",
       "options": [
-        { "value": "模型输入前", "hue": "Blue" },
-        { "value": "模型内部", "hue": "Purple" },
-        { "value": "推理缓存", "hue": "Orange" },
-        { "value": "外部记忆", "hue": "Turquoise" }
+        {
+          "value": "文本",
+          "hue": "Blue"
+        },
+        {
+          "value": "图像",
+          "hue": "Purple"
+        },
+        {
+          "value": "视频",
+          "hue": "Orange"
+        },
+        {
+          "value": "音频",
+          "hue": "Turquoise"
+        },
+        {
+          "value": "3D",
+          "hue": "Green"
+        }
       ]
     },
     {
-      "key": "retention",
-      "label": "保留方式",
+      "key": "mechanism",
+      "label": "机制",
       "options": [
-        { "value": "抽取原文", "hue": "Wathet" },
-        { "value": "生成摘要", "hue": "Green" },
-        { "value": "潜在表示", "hue": "Purple" },
-        { "value": "选择性丢弃", "hue": "Red" },
-        { "value": "量化编码", "hue": "Yellow" }
-      ]
-    },
-    {
-      "key": "goal",
-      "label": "优化目标",
-      "options": [
-        { "value": "减少 Token", "hue": "Blue" },
-        { "value": "降低内存", "hue": "Orange" },
-        { "value": "降低延迟", "hue": "Lime" },
-        { "value": "提升长程准确率", "hue": "Carmine" },
-        { "value": "降低调用成本", "hue": "Yellow" }
+        {
+          "value": "筛选剪枝",
+          "hue": "Blue"
+        },
+        {
+          "value": "合并聚类",
+          "hue": "Purple"
+        },
+        {
+          "value": "摘要改写",
+          "hue": "Orange"
+        },
+        {
+          "value": "潜在编码",
+          "hue": "Turquoise"
+        },
+        {
+          "value": "量化",
+          "hue": "Green"
+        },
+        {
+          "value": "低秩重构",
+          "hue": "Carmine"
+        },
+        {
+          "value": "淘汰",
+          "hue": "Wathet"
+        },
+        {
+          "value": "按需检索",
+          "hue": "Yellow"
+        }
       ]
     },
     {
       "key": "scenario",
       "label": "场景",
       "options": [
-        { "value": "长文档问答", "hue": "Blue" },
-        { "value": "多轮对话", "hue": "Turquoise" },
-        { "value": "智能体任务", "hue": "Purple" },
-        { "value": "代码理解", "hue": "Green" },
-        { "value": "RAG", "hue": "Orange" },
-        { "value": "视频与音频", "hue": "Carmine" }
+        {
+          "value": "长文档",
+          "hue": "Blue"
+        },
+        {
+          "value": "RAG",
+          "hue": "Purple"
+        },
+        {
+          "value": "多轮对话",
+          "hue": "Orange"
+        },
+        {
+          "value": "Agent",
+          "hue": "Turquoise"
+        },
+        {
+          "value": "代码",
+          "hue": "Green"
+        },
+        {
+          "value": "长推理",
+          "hue": "Carmine"
+        },
+        {
+          "value": "长视频",
+          "hue": "Wathet"
+        },
+        {
+          "value": "流式视频",
+          "hue": "Yellow"
+        },
+        {
+          "value": "文档与 GUI",
+          "hue": "Lime"
+        },
+        {
+          "value": "导航",
+          "hue": "Red"
+        },
+        {
+          "value": "机器人",
+          "hue": "Gray"
+        },
+        {
+          "value": "自动驾驶",
+          "hue": "Blue"
+        },
+        {
+          "value": "医学",
+          "hue": "Purple"
+        },
+        {
+          "value": "遥感",
+          "hue": "Orange"
+        }
       ]
     }
   ]
