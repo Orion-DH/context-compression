@@ -2,7 +2,7 @@
   "use strict";
 
   const PAGE_SIZE = 10;
-  const AWARD_RANK = { Best: 0, Oral: 1, Spotlight: 2, Highlight: 3 };
+  const AWARD_RANK = { Oral: 0, Spotlight: 1 };
   const NOTES = [
     ["method", "核心方法"],
     ["evidence", "实验证据"],
@@ -21,7 +21,7 @@
   let taxonomy = null;
   let facets = [];
   const hueOf = new Map();
-  const state = { status: "", category: "", branch: "", q: "", sort: "added", page: 1, sel: {} };
+  const state = { relevance: "", category: "", branch: "", q: "", sort: "default", page: 1, sel: {} };
 
   const load = (url) => fetch(url, { cache: "no-cache" }).then((r) => {
     if (!r.ok) throw new Error(url);
@@ -42,8 +42,8 @@
       return { key, label, options: options.map((value) => ({ value })) };
     };
     facets = [
-      derived("venue", "来源", (a, b) => a.localeCompare(b)),
-      derived("year", "年份", (a, b) => b.localeCompare(a)),
+      derived("venue", "会议", (a, b) => a.localeCompare(b)),
+      derived("track", "录用类型", (a, b) => taxonomy.trackOrder.indexOf(a) - taxonomy.trackOrder.indexOf(b)),
       ...taxonomy.facets,
     ];
     facets.forEach((f) => {
@@ -57,11 +57,11 @@
   }
 
   function matches(p, skip) {
-    if (skip !== "status" && state.status && p.status !== state.status) return false;
+    if (skip !== "relevance" && state.relevance && p.relevance !== state.relevance) return false;
     if (skip !== "category" && state.category && p.category !== state.category) return false;
     if (skip !== "category" && state.branch && p.branch !== state.branch) return false;
     if (state.q) {
-      const hay = [p.title, p.branch, p.summary, ...(p.authors || []), ...Object.values(p.notes || {})]
+      const hay = [p.title, p.category, p.branch, p.summary, p.venue, ...(p.authors || []), ...Object.values(p.notes || {})]
         .join(" ").toLowerCase();
       if (!state.q.toLowerCase().split(/\s+/).filter(Boolean).every((w) => hay.includes(w))) return false;
     }
@@ -72,22 +72,20 @@
   }
 
   const sorted = (list) => {
-    const byAdded = (a, b) => (b.added || "").localeCompare(a.added || "");
     const compare = {
-      added: byAdded,
-      year: (a, b) => (b.year || 0) - (a.year || 0) || byAdded(a, b),
-      award: (a, b) => (AWARD_RANK[a.award] ?? 9) - (AWARD_RANK[b.award] ?? 9) || byAdded(a, b),
+      default: () => 0,
+      award: (a, b) => (AWARD_RANK[a.track] ?? 9) - (AWARD_RANK[b.track] ?? 9),
       title: (a, b) => String(a.title).localeCompare(String(b.title)),
     }[state.sort];
     return [...list].sort(compare);
   };
 
   function renderSections() {
-    const pool = papers.filter((p) => matches(p, "status"));
-    const count = (s) => pool.filter((p) => p.status === s).length;
-    const items = [["", "全部", pool.length], ...taxonomy.statuses.map((s) => [s, s, count(s)])];
+    const pool = papers.filter((p) => matches(p, "relevance"));
+    const count = (s) => pool.filter((p) => p.relevance === s).length;
+    const items = [["", "全部", pool.length], ...taxonomy.relevances.map((s) => [s, s, count(s)])];
     $("sections").innerHTML = items.map(([v, label, n]) => (
-      `<button class="${state.status === v ? "on" : ""}" data-status="${esc(v)}">${esc(label)} <span class="n">${n}</span></button>`
+      `<button class="${state.relevance === v ? "on" : ""}" data-relevance="${esc(v)}">${esc(label)} <span class="n">${n}</span></button>`
     )).join("");
   }
 
@@ -127,8 +125,8 @@
   function cardHtml(p) {
     const link = safeUrl(p.url);
     const actions = [
-      safeUrl(p.pdf) && `<a class="btn primary" href="${esc(p.pdf)}" target="_blank" rel="noopener">PDF</a>`,
-      link && `<a class="btn" href="${esc(link)}" target="_blank" rel="noopener">论文页</a>`,
+      safeUrl(p.pdf) && `<a class="btn primary" href="${esc(p.pdf)}" target="_blank" rel="noopener">${/openreview\.net/.test(p.pdf) ? "OpenReview" : "PDF"}</a>`,
+      link && `<a class="btn" href="${esc(link)}" target="_blank" rel="noopener">官方页面</a>`,
       safeUrl(p.code) && `<a class="btn" href="${esc(p.code)}" target="_blank" rel="noopener">代码</a>`,
     ].filter(Boolean).join("");
     const authors = p.authors || [];
@@ -137,8 +135,8 @@
       [p.category, p.branch].filter(Boolean).map(esc).join(" / "),
       esc(authorText),
       esc(p.venue),
-      p.award ? `<span class="award">${esc(p.award)}</span>` : "",
-      esc(p.status),
+      AWARD_RANK[p.track] !== undefined ? `<span class="award">${esc(p.track)}</span>` : esc(p.track),
+      esc(p.relevance),
     ].filter(Boolean).join(" · ");
     const rows = taxonomy.facets.map((f) => {
       const vals = valuesOf(p, f.key);
@@ -181,7 +179,7 @@
       items.push(`<button class="chip" data-facet="${esc(f.key)}" data-value="${esc(v)}">${esc(f.label)}：${esc(v)} ✕</button>`);
     }));
     $("active-filters").innerHTML = items.join("");
-    $("clear-all").hidden = !items.length && !state.status;
+    $("clear-all").hidden = !items.length && !state.relevance;
   }
 
   function render() {
@@ -206,10 +204,10 @@
   function writeHash() {
     const h = new URLSearchParams();
     if (state.q) h.set("q", state.q);
-    if (state.status) h.set("status", state.status);
+    if (state.relevance) h.set("relevance", state.relevance);
     if (state.category) h.set("category", state.category);
     if (state.branch) h.set("branch", state.branch);
-    if (state.sort !== "added") h.set("sort", state.sort);
+    if (state.sort !== "default") h.set("sort", state.sort);
     if (state.page > 1) h.set("page", state.page);
     facets.forEach((f) => { if (state.sel[f.key].size) h.set(f.key, [...state.sel[f.key]].join("|")); });
     const next = h.toString();
@@ -219,10 +217,10 @@
   function readHash() {
     const h = new URLSearchParams(location.hash.slice(1));
     state.q = h.get("q") || "";
-    state.status = h.get("status") || "";
+    state.relevance = h.get("relevance") || "";
     state.category = h.get("category") || "";
     state.branch = h.get("branch") || "";
-    state.sort = h.get("sort") || "added";
+    state.sort = h.get("sort") || "default";
     state.page = Math.max(1, parseInt(h.get("page"), 10) || 1);
     facets.forEach((f) => { state.sel[f.key] = new Set((h.get(f.key) || "").split("|").filter(Boolean)); });
     $("search").value = state.q;
@@ -240,8 +238,8 @@
       state.page = Number(d.page);
       render();
       window.scrollTo(0, 0);
-    } else if (d.status !== undefined) {
-      update(() => { state.status = d.status; });
+    } else if (d.relevance !== undefined) {
+      update(() => { state.relevance = d.relevance; });
     } else if (d.category !== undefined) {
       update(() => {
         const sameBranch = d.branch && state.branch === d.branch;
@@ -267,7 +265,7 @@
   $("search").addEventListener("input", (e) => update(() => { state.q = e.target.value.trim(); }));
   $("sort").addEventListener("change", (e) => update(() => { state.sort = e.target.value; }));
   $("clear-all").addEventListener("click", () => update(() => {
-    Object.assign(state, { q: "", status: "", category: "", branch: "" });
+    Object.assign(state, { q: "", relevance: "", category: "", branch: "" });
     $("search").value = "";
     facets.forEach((f) => state.sel[f.key].clear());
   }));
