@@ -17895,23 +17895,24 @@
  },
  {
   "id": "hf-2026-003",
-  "title": "Contexts are Never Long Enough: Structured Reasoning for Scalable Question Answering over Long Document Sets",
+  "title": "SLIDERS: Systematic Reviews via Automated Evidence Synthesis and Reconciliation",
   "authors": [
    "Harshit Joshi",
    "Priyank Shethia",
    "Jadelynn Dao",
-   "Monica S. Lam"
+   "Monica Lam"
   ],
   "year": 2026,
-  "venue": "HF Daily",
-  "track": "HF Daily",
+  "venue": "NeurIPS 2026",
+  "track": "Poster",
   "relevance": "扩展相关",
-  "url": "https://huggingface.co/papers/2604.22294",
+  "url": "https://neurips.cc/virtual/2026/poster/153403",
   "pdf": "https://arxiv.org/pdf/2604.22294",
   "arxiv": "https://arxiv.org/abs/2604.22294",
   "hf": "https://huggingface.co/papers/2604.22294",
   "hfDate": "2026-04-27",
   "source": [
+   "正式发表",
    "HF Daily"
   ],
   "category": "文本与检索上下文",
@@ -17925,9 +17926,9 @@
   "scenario": [
    "长文档"
   ],
-  "summary": "把长文档的关键信息提取成关系数据库并校正记录，以 SQL 结构化推理替代拼接全部证据。",
+  "summary": "面向系统综述，自动把大规模文档中的信息抽取为证据表，并由 agent 写代码对账、整合跨文档证据，替代依赖检索片段的做法；摘要未以上下文压缩为目标，压缩体现在结构化抽取。",
   "added": "2026-11-08",
-  "acceptance": "未发现录用证据"
+  "acceptance": "官方确认"
  },
  {
   "id": "hf-2026-004",
@@ -18159,10 +18160,10 @@
  },
  {
   "id": "hf-2026-014",
-  "title": "MemFly: On-the-Fly Memory Optimization via Information Bottleneck",
+  "title": "MemCoRe: Recovering Evidence from Progressively Compressed Factual Knowledge for Agent Memory",
   "authors": [
    "Zhenyuan Zhang",
-   "Xianzhang Jia",
+   "Jia Xianzhang",
    "Zhiqin Yang",
    "Zhenbo Song",
    "Wei Xue",
@@ -18170,15 +18171,16 @@
    "Yike Guo"
   ],
   "year": 2026,
-  "venue": "HF Daily",
-  "track": "HF Daily",
+  "venue": "NeurIPS 2026",
+  "track": "Poster",
   "relevance": "核心方法",
-  "url": "https://huggingface.co/papers/2602.07885",
+  "url": "https://neurips.cc/virtual/2026/poster/155641",
   "pdf": "https://arxiv.org/pdf/2602.07885",
   "arxiv": "https://arxiv.org/abs/2602.07885",
   "hf": "https://huggingface.co/papers/2602.07885",
   "hfDate": "2026-02-13",
   "source": [
+   "正式发表",
    "HF Daily"
   ],
   "category": "Agent 历史与工作记忆",
@@ -18187,13 +18189,15 @@
    "文本"
   ],
   "mechanism": [
-   "筛选剪枝"
+   "摘要改写",
+   "按需检索"
   ],
-  "scenario": [],
-  "summary": "以信息瓶颈目标优化分层记忆，在减少冗余与保留后续查询信息之间平衡。",
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "把 agent 记忆组织为压缩层级，证据从详细记录逐级压缩为关键词和主题组，并跨层检索，在压缩冗余和保留可检索结构之间权衡；早期版本名为 MemFly。",
   "added": "2026-11-08",
-  "acceptance": "作者声明",
-  "acceptanceNote": "作者声明：早期版本入选 ICLR 2026 MemAgents Workshop"
+  "acceptance": "官方确认"
  },
  {
   "id": "hf-2026-015",
@@ -20565,8 +20569,12 @@
   "id": "hf-2026-056",
   "title": "LatentPress: Context Compression Beyond Text and Vision",
   "authors": [
+   "Yuanda Xu",
    "Zhengze Zhou",
-   "Hejian Sang"
+   "Hejian Sang",
+   "Xinchen Du",
+   "Baiyang Dai",
+   "Sen Na"
   ],
   "year": 2026,
   "venue": "HF Daily",
@@ -22816,7 +22824,7 @@
  },
  {
   "id": "hf-2026-067",
-  "title": "CodeOCR: On the Effectiveness of Vision Language Models in Code Understanding",
+  "title": "Seeing is Coding: On the Effectiveness of Vision Language Models in Code Understanding",
   "authors": [
    "Yuling Shi",
    "Chaoxiang Xie",
@@ -23918,6 +23926,7 @@
    "Yupu Hao",
    "Yuqiao Tan",
    "Shizhu He",
+   "Ben Wang",
    "Jun Zhao",
    "Kun Xu",
    "Kang Liu"
@@ -23947,7 +23956,7 @@
  },
  {
   "id": "hf-2026-103",
-  "title": "Distilling Conversations: Abstract Compression of Conversational Audio Context for LLM-based ASR",
+  "title": "Abstract Compression of Conversational Audio Context for LLM-based ASR",
   "authors": [
    "Shashi Kumar",
    "Esaú Villatoro-Tello",
@@ -25059,6 +25068,7 @@
    "Wenting Zhao",
    "Cheng Qian",
    "Liangwei Yang",
+   "Weizhi Zhang",
    "Jiawei Han",
    "Heng Ji",
    "Silvio Savarese",
@@ -25274,9 +25284,10 @@
  },
  {
   "id": "hf-2026-145",
-  "title": "GQLA: Group-Query Latent Attention for Hardware-Adaptive Large Language Model Decoding",
+  "title": "GQLA: Group-Query Latent Attention for Hardware-Adaptive Decoding",
   "authors": [
-   "Fanxu Meng"
+   "Fanxu Meng",
+   "Zhixin Pan"
   ],
   "year": 2026,
   "venue": "HF Daily",
@@ -25389,6 +25400,7 @@
    "Dayou Du",
    "Xialie Zhuang",
    "Yulei Qian",
+   "Jianchao Tan",
    "Yuchen Xie",
    "Yik-Chung Wu",
    "Hongxia Yang",
@@ -25545,7 +25557,7 @@
  },
  {
   "id": "hf-2026-152",
-  "title": "RoPE-Aware Bit Allocation for KV-Cache Quantization",
+  "title": "Block-GTQ: RoPE-Block Rate Allocation for KV-Cache Quantization",
   "authors": [
    "Fengfeng Liang",
    "Yuechen Zhang",
