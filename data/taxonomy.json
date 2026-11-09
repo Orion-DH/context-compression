@@ -248,6 +248,14 @@
         {
           "value": "多 Agent",
           "hue": "Green"
+        },
+        {
+          "value": "图像生成",
+          "hue": "Carmine"
+        },
+        {
+          "value": "语音识别",
+          "hue": "Wathet"
         }
       ]
     }

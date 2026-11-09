@@ -2123,7 +2123,8 @@
    "按需检索"
   ],
   "scenario": [
-   "多轮对话"
+   "多轮对话",
+   "语音识别"
   ],
   "summary": "基于 LLM 的对话语音识别不再使用固定或完整历史，而是按声学和文本相似度检索并选择最相关的历史上下文，减少冗余；任务限于语音识别。",
   "added": "2026-11-08",
@@ -2697,6 +2698,112 @@
   "mechanism": [],
   "scenario": [],
   "summary": "分析 VideoLLM 漏报有害内容的原因，指出稀疏均匀采帧和激进的 token 下采样造成覆盖与空间信息损失，并据此构造黑盒攻击；研究的是视觉压缩的安全代价，不提出压缩方法。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-hack",
+  "title": "Head-Aware KV Cache Compression for Efficient Visual Autoregressive Modeling",
+  "authors": [
+   "Qin, Ziran",
+   "Lv, Youru",
+   "Lin, Mingbao",
+   "Guo, Hang",
+   "Zhang, Zeren",
+   "Zou, Danping",
+   "Lin, Weiyao"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39686",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/39686/43647",
+  "category": "KV Cache",
+  "branch": "预算分配",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "图像生成"
+  ],
+  "summary": "HACK 将视觉自回归（VAR）模型的注意力头分为上下文头和结构头，分别采用压缩策略和非对称缓存预算，把平均 KV 长度限制在固定预算内；最高压缩 70% 的 KV Cache 且输出质量不降，在 Infinity-8B 上内存减少 1.75 倍、速度提升 1.57 倍。适用边界：对象是图像生成模型，不是 LLM／MLLM。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-ams-kv",
+  "title": "AMS-KV: Adaptive KV Caching in Multi-Scale Visual Autoregressive Transformers",
+  "authors": [
+   "Xu, Boxun",
+   "Wang, Yu",
+   "Wang, Zihu",
+   "Li, Peng"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39936",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/39936/43897",
+  "category": "KV Cache",
+  "branch": "淘汰与保留",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [
+   "淘汰"
+  ],
+  "scenario": [
+   "图像生成"
+  ],
+  "summary": "AMS-KV 面向多尺度视觉自回归模型，优先保留凝聚尺度和局部尺度的 KV，并按尺度间相似度识别需要缓存的层；与原始 next-scale VAR 相比，KV 用量最多减少 84.83%，自注意力时延减少 60.48%。适用边界：对象是图像生成模型，不是 LLM／MLLM。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-sap2",
+  "title": "Speech-Aware Long Context Pruning and Integration for Contextualized Automatic Speech Recognition",
+  "authors": [
+   "Rong, Yiming",
+   "Zhang, Yixin",
+   "Wang, Ziyi",
+   "Jiang, Deyang",
+   "Zhao, Yunlong",
+   "Wu, Haoran",
+   "Zhou, Shiyu",
+   "Xu, Bo"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40563",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40563/44524",
+  "category": "视频与音视频",
+  "branch": "音视频联合压缩",
+  "modality": [
+   "音频",
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "合并聚类"
+  ],
+  "scenario": [
+   "语音识别"
+  ],
+  "summary": "SAP² 分两阶段动态剪枝并整合上下文关键词，用语音驱动的注意力池化压缩上下文嵌入，保留与语音相关的信息；在 SlideSpeech 上偏置关键词错误率比无上下文基线降低 41.1%。适用边界：摘要未说明模型是否为 LLM，任务限于语音识别。",
   "added": "2026-11-08",
   "source": [
    "正式发表"
