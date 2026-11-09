@@ -10248,6 +10248,385 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "eccv-2026-thinkstream",
+  "title": "Thinking in Streaming Video",
+  "authors": [
+   "Zikang Liu",
+   "Longteng Guo",
+   "Handong Li",
+   "Ru Zhen",
+   "Xingjian He",
+   "Ruyi Ji",
+   "Xiaoming Ren",
+   "Yanhao Zhang",
+   "Haonan Lu",
+   "Jing Liu"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/4857",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7746.pdf",
+  "category": "视频与音视频",
+  "branch": "流式视频记忆",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "流式视频"
+  ],
+  "summary": "提出推理压缩的流式记忆 RCSM，把中间推理轨迹作为紧凑语义记忆替换过时的视觉 token，保留必要上下文，维持低时延和低内存。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-qsvideo",
+  "title": "QSVideo: Query-Conditioned Semantic Temporal Retrieval for Video Understanding",
+  "authors": [
+   "Wei Ao",
+   "Lan Wang",
+   "Vishnu Boddeti"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/5884",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/13802.pdf",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "长视频",
+   "流式视频"
+  ],
+  "summary": "在严格帧数限制下，按查询从对象、动作和地点维度估计相关度，并联合优化相关性与多样性来选帧，同时适配长视频和流式视频。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-colt",
+  "title": "CoLT: Teaching Multi-Modal Models to Think with Chain of Latent Thoughts",
+  "authors": [
+   "Lianyu Hu",
+   "shengqian qin",
+   "Zeqin Liao",
+   "Qing Guo",
+   "Liang Wan",
+   "Wei Feng",
+   "Yang Liu"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/4776",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/7421.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "让多模态模型用潜在思考链代替冗长文本 token，最少 3 步完成思考，并用可在推理时移除的解码器提供步骤级监督；与文本思维链相比推理时间减少 10.1 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-covt",
+  "title": "Chain-of-Visual-Thought: Teaching VLMs to See and Think Better with Continuous Visual Tokens",
+  "authors": [
+   "Yiming Qin",
+   "Bomin Wei",
+   "Jiaxin Ge",
+   "Konstantinos Kallidromitis",
+   "Stephanie Fu",
+   "Trevor Darrell",
+   "XuDong Wang"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Oral",
+  "relevance": "核心方法",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/4447",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5952.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用约 20 个连续视觉 token 蒸馏外观、3D 几何、布局和边缘等感知信息，让 VLM 在紧凑的连续视觉潜在空间中推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-hylar",
+  "title": "HyLaR: Hybrid Latent Reasoning with Decoupled Policy Optimization",
+  "authors": [
+   "Tao Cheng",
+   "Shi-Zhe Chen",
+   "Hao Zhang",
+   "Yixin Qin",
+   "Jinwen Luo",
+   "Zheng Wei"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/5084",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/8768.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "交错离散文本生成和连续视觉潜在表示，并用解耦策略优化在混合动作空间做强化学习；主线是提升推理效果。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-prolavit",
+  "title": "ProLaViT: Learning Progressive Latent Visual Thoughts in Structured Latent Space",
+  "authors": [
+   "Peiming Li",
+   "Yifan Wang",
+   "Xiaotian Zhang",
+   "Zhiyuan Hu",
+   "Shiyu Li",
+   "Zheng Wei",
+   "Yang Tang"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/3335",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/999.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用模型自身的视觉编码器监督潜在思考，在连续潜在空间中进行结构化视觉推导，替代显式视觉生成。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-colvr",
+  "title": "Contrastive-Guided Self-Supervised Latent Visual Reasoning for Hallucination Mitigation",
+  "authors": [
+   "Aoxue Dai",
+   "Ningning Wang"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/5118",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/8926.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用视觉对比原则和强化学习，以无标注方式训练视觉潜在 token；主线是缓解幻觉。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-visreflect",
+  "title": "VisReflect: Latent Visual Reflection for Fine-Grained Perception in Long Visual Context",
+  "authors": [
+   "Xiaoqian Shen",
+   "Mohamed Elhoseiny"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/5979",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/15028.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "图像",
+   "视频"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "针对长视觉上下文中注意力被无关 token 吸收的问题，生成连续的潜在视觉反思来引导注意力，替代显式预测并重新编码裁剪区域；相比缩放方法，视频推理时间减少约 44%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-critiquedrivevlm",
+  "title": "CritiqueDriveVLM: From Verifier-Guided Reinforcement Learning to Latent Thought Distillation for Autonomous Driving",
+  "authors": [
+   "Zhaohong Liu",
+   "Hao Ye",
+   "Xianlin Zhang",
+   "Mengshi Qi"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/4408",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/5781.pdf",
+  "category": "3D、具身与领域专用",
+  "branch": "自动驾驶",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "自动驾驶"
+  ],
+  "summary": "通过潜在思考蒸馏把教师模型的推理状态压缩到无显式思维链的学生模型中；平均生成长度仅 28 token，推理时延从 3482 毫秒降到 416 毫秒。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-latentpilot",
+  "title": "LatentPilot: Scene-Aware Vision-and-Language Navigation by Dreaming Ahead with Latent Visual Reasoning",
+  "authors": [
+   "HAIHONG HAO",
+   "Lei Chen",
+   "Mingfei Han",
+   "Changlin Li",
+   "Dong An",
+   "Yuqiang Yang",
+   "Zhihui Li",
+   "Xiaojun Chang"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/3186",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/262.pdf",
+  "category": "3D、具身与领域专用",
+  "branch": "导航",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "导航"
+  ],
+  "summary": "学习跨步传递的视觉潜在 token，让智能体在潜在空间中预想动作影响，推理时无需未来帧；主线是导航决策。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "eccv-2026-medsynapse-v",
+  "title": "MedSynapse-V: Bridging Visual Perception and Clinical Intuition via Latent Memory Evolution",
+  "authors": [
+   "Chunzheng Zhu",
+   "Jiaqi Zeng",
+   "Junyu Jiang",
+   "Jianxin Lin",
+   "Yijun Wang"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://eccv.ecva.net/virtual/2026/poster/3771",
+  "pdf": "https://media.eventhosts.cc/Conferences/ECCV2026/pdfs/3038.pdf",
+  "category": "3D、具身与领域专用",
+  "branch": "其他领域专用",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "医学"
+  ],
+  "summary": "在模型隐藏流中动态生成凝练的隐式诊断记忆，用反事实奖励剪除冗余记忆，把外部专家经验内化，无需显式思维链；适用范围是医学诊断。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "iclr-2026-01",
   "title": "Autoencoding-Free Context Compression for LLMs via Contextual Semantic Anchors",
   "authors": [
