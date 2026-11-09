@@ -6,9 +6,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-REQUIRED = ["id", "title", "authors", "year", "venue", "track", "relevance", "source", "url", "category", "branch", "summary", "added"]
+REQUIRED = ["id", "title", "authors", "year", "venue", "track", "relevance", "source", "acceptance", "url", "category", "branch", "summary", "added"]
 NOTE_KEYS = {"method", "evidence", "assumptions", "limitations", "related"}
-TOP_KEYS = set(REQUIRED) | {"source", "pdf", "code", "hf", "arxiv", "hfDate", "modality", "mechanism", "scenario", "notes"}
+TOP_KEYS = set(REQUIRED) | {"source", "pdf", "code", "hf", "arxiv", "hfDate", "acceptanceNote", "modality", "mechanism", "scenario", "notes"}
 OTHER_RELEVANCE = "其他录用类型"
 
 
@@ -22,6 +22,8 @@ def check(paper, taxonomy):
         errors.append(f"track 无效：{paper.get('track')}")
     if not set(paper.get("source", [])) <= set(taxonomy["sources"]) or not paper.get("source"):
         errors.append(f"source 无效：{paper.get('source')}")
+    if paper.get("acceptance") not in taxonomy["acceptances"]:
+        errors.append(f"acceptance 无效：{paper.get('acceptance')}")
     if not isinstance(paper.get("year"), int):
         errors.append("year 必须是整数")
     if not isinstance(paper.get("authors"), list):
