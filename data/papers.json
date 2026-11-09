@@ -18,7 +18,7 @@
   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40811",
   "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40811/44772",
   "category": "文本与检索上下文",
-  "branch": "重排与检索表示压缩",
+  "branch": "RAG 文档压缩",
   "modality": [
    "文本"
   ],
@@ -2776,7 +2776,10 @@
   "mechanism": [
    "摘要改写"
   ],
-  "scenario": [],
+  "scenario": [
+   "流式视频",
+   "长视频"
+  ],
   "summary": "MM-Mem 将视觉感知痕迹逐级蒸馏为情节及符号语义，借助语义信息瓶颈和 RL 优化压缩与证据保留。",
   "added": "2026-11-08",
   "source": [
@@ -4660,7 +4663,9 @@
    "合并聚类",
    "按需检索"
   ],
-  "scenario": [],
+  "scenario": [
+   "文档与 GUI"
+  ],
   "summary": "Prune-then-Merge 先筛掉低信息视觉文档 patch，再层级合并多向量表示；压缩检索索引，不等同于生成模型上下文。",
   "added": "2026-11-08",
   "source": [
@@ -6236,7 +6241,9 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [],
+  "scenario": [
+   "长视频"
+  ],
   "summary": "QViC-MF 利用问题引导的选择注意力，从当前片段与历史记忆中保留相关视觉信息；压缩器和记忆反馈逐片段迭代。",
   "added": "2026-11-08",
   "source": [
@@ -8514,7 +8521,8 @@
    "摘要改写"
   ],
   "scenario": [
-   "文档与 GUI"
+   "文档与 GUI",
+   "Agent"
   ],
   "summary": "AnchorGUI 将预期 GUI 转移压成轻量文本摘要，滑窗内选择性保留意外结果截图作为证据，压缩密集多模态历史并辅助纠错。",
   "added": "2026-11-08",
@@ -8544,7 +8552,8 @@
   "branch": "3D 空间理解",
   "modality": [
    "图像",
-   "视频"
+   "视频",
+   "3D"
   ],
   "mechanism": [
    "合并聚类"
@@ -8610,7 +8619,9 @@
   "mechanism": [
    "潜在编码"
   ],
-  "scenario": [],
+  "scenario": [
+   "长视频"
+  ],
   "summary": "CTEPM 将密集视频转成带连续时间戳的稀疏潜在事件过程，并按问题运行时间算子生成紧凑结构化证据。",
   "added": "2026-11-08",
   "source": [
@@ -8682,7 +8693,8 @@
    "按需检索"
   ],
   "scenario": [
-   "Agent"
+   "Agent",
+   "流式视频"
   ],
   "summary": "EventMemAgent 用事件粒度 reservoir sampling 维持固定长度短期缓存，长期按事件归档，并按需调用工具补充证据；有界的是活动缓冲，不代表外部档案恒定。",
   "added": "2026-11-08",
@@ -9491,7 +9503,9 @@
   "mechanism": [
    "筛选剪枝"
   ],
-  "scenario": [],
+  "scenario": [
+   "文档与 GUI"
+  ],
   "summary": "以非平衡最优传输统一 token 重要性、冗余和覆盖，压缩视觉文档多向量检索表示；不是生成式 LLM 输入或历史缓存压缩。",
   "added": "2026-11-08",
   "source": [
@@ -10186,7 +10200,9 @@
    "摘要改写",
    "按需检索"
   ],
-  "scenario": [],
+  "scenario": [
+   "Agent"
+  ],
   "summary": "Sculptor 提供上下文分段、摘要、隐藏、恢复与搜索工具，并训练主动修改会话历史的策略；压缩与可恢复外部存储共同使用。",
   "added": "2026-11-08",
   "source": [
@@ -10257,7 +10273,9 @@
    "筛选剪枝",
    "按需检索"
   ],
-  "scenario": [],
+  "scenario": [
+   "Agent"
+  ],
   "summary": "StateLM 通过内部推理循环主动使用上下文剪枝、文档索引和笔记工具，动态控制活动上下文；属于综合上下文管理框架。",
   "added": "2026-11-08",
   "source": [
@@ -16281,7 +16299,9 @@
   "mechanism": [
    "摘要改写"
   ],
-  "scenario": [],
+  "scenario": [
+   "Agent"
+  ],
   "summary": "以自监督重构与中间记忆回忆目标训练连续记忆更新，约束历史压缩的完整性。",
   "added": "2026-11-08",
   "acceptance": "未发现录用证据"
@@ -17767,13 +17787,17 @@
   "category": "图像视觉 token",
   "branch": "文档与 GUI",
   "modality": [
-   "图像"
+   "图像",
+   "文本",
+   "视频"
   ],
   "mechanism": [
    "合并聚类",
    "按需检索"
   ],
-  "scenario": [],
+  "scenario": [
+   "文档与 GUI"
+  ],
   "summary": "在固定向量预算下用注意力引导聚类等方法压缩多模态文档索引；属于检索端表示压缩，并非直接裁剪生成模型提示。",
   "added": "2026-11-08",
   "acceptance": "官方确认"
