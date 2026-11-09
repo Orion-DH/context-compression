@@ -18089,6 +18089,568 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "iclr-2026-step-entropy",
+  "title": "Making Slow Thinking Faster: Compressing LLM Chain-of-Thought via Step Entropy",
+  "authors": [
+   "Zeju LI",
+   "Jianyuan Zhong",
+   "Ziyang Zheng",
+   "Xiangyu Wen",
+   "Zhijian Xu",
+   "Yingying Cheng",
+   "Fan Zhang",
+   "Qiang Xu"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008526",
+  "pdf": "https://openreview.net/forum?id=cGLqQfS5wH",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用步骤熵衡量思维链各步的信息贡献，并训练模型用 [SKIP] token 生成压缩后的思维链；在 DeepSeek-R1-7B、14B 和 Qwen3-8B 上，剪除 80% 的低熵中间步骤后准确率没有明显下降。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-iterresearch",
+  "title": "IterResearch: Rethinking Long-Horizon Agents with Interaction Scaling",
+  "authors": [
+   "Guoxin Chen",
+   "Zile Qiao",
+   "Xuanzhong Chen",
+   "Donglei Yu",
+   "Haotian Xu",
+   "Xin Zhao",
+   "Ruihua Song",
+   "Wenbiao Yin",
+   "Huifeng Yin",
+   "Liwen Zhang",
+   "Kuan Li",
+   "Minpeng Liao",
+   "Yong Jiang",
+   "Pengjun Xie",
+   "Fei Huang",
+   "Jingren Zhou"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10007246",
+  "pdf": "https://openreview.net/forum?id=qQ5MZ5Mx7p",
+  "category": "Agent 历史与工作记忆",
+  "branch": "轨迹压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "针对单一上下文持续累积造成的噪声问题，以不断更新的报告作为记忆，周期性重建工作区并综合信息，替代线性累积上下文，可扩展到 2048 次交互。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-hyrea",
+  "title": "Learning to Reason over Continuous Tokens with Reinforcement Learning",
+  "authors": [
+   "Yiran Zhao",
+   "Yuhui Xu",
+   "Doyen Sahoo",
+   "Caiming Xiong",
+   "Junnan Li"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10007664",
+  "pdf": "https://openreview.net/forum?id=lebJ6wz1vj",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "训练模型在显式 token 推理和潜在嵌入推理间动态切换，用嵌入替换低熵思维链步骤；在数学推理基准上减少 token 用量，同时保持或提高准确率。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-lrt",
+  "title": "Rethinking LLM Reasoning: From Explicit Trajectories to Latent Representations",
+  "authors": [
+   "Cong Jiang",
+   "Xiaofeng Zhang",
+   "Fangzhi Zhu",
+   "Xiaowei Chen",
+   "Junxiong Zhu",
+   "Zheng Zhang"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10010844",
+  "pdf": "https://openreview.net/forum?id=CbK7lYbmv8",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用轻量推理网络一次前向生成紧凑潜在向量，代替逐 token 生成的显式推理轨迹，并以此约束模型产生最终答案。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-prompt-mii",
+  "title": "Prompt-MII: Meta-Learning Instruction Induction for LLMs",
+  "authors": [
+   "Emily Xiao",
+   "Yixiao Zeng",
+   "Ada Chen",
+   "Chin-Jou Li",
+   "Amanda Bertsch",
+   "Graham Neubig"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10006473",
+  "pdf": "https://openreview.net/forum?id=zD9fjEj4Oz",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [],
+  "summary": "用强化学习元学习指令归纳模型，把训练样例压缩成紧凑指令；在 90 个未见分类任务上达到完整 in-context learning 的效果，所需 token 少 3-13 倍。适用范围是分类任务。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-ldar",
+  "title": "Beyond RAG vs. Long-Context: Learning Distraction-Aware Retrieval for Efficient Knowledge Grounding",
+  "authors": [
+   "Seongwoong Shim",
+   "Myunsoo Kim",
+   "Jae Cho",
+   "Byung-Jun Lee"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008538",
+  "pdf": "https://openreview.net/forum?id=c8CZWLy4T4",
+  "category": "文本与检索上下文",
+  "branch": "RAG 文档压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "按需检索",
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "针对把完整文档放入长上下文时的冗余和干扰，学习检索能减少干扰段落的上下文子集，在比长上下文方法更少的 token 下取得更高性能。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-clause",
+  "title": "CLAUSE: Agentic Neuro-Symbolic Knowledge Graph Reasoning via Dynamic Learnable Context Engineering",
+  "authors": [
+   "Yang Zhao",
+   "Chengxiao Dai",
+   "Wei Zhuo",
+   "Yue Xiu",
+   "Dusit Niyato"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://iclr.cc/virtual/2026/poster/10011143",
+  "pdf": "https://openreview.net/forum?id=97Qk741ih6",
+  "category": "文本与检索上下文",
+  "branch": "RAG 文档压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "多 Agent"
+  ],
+  "summary": "把知识图谱问答的上下文构建建模为序贯决策，三个 agent 在 token、交互步数和边编辑预算下决定扩展、路径和保留的证据，生成紧凑上下文；适用范围限于知识图谱问答。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-icecache",
+  "title": "IceCache: Memory-Efficient KV-cache Management for Long-Sequence LLMs",
+  "authors": [
+   "Yuzhen Mao",
+   "Qitong Wang",
+   "Martin Ester",
+   "Ke Li"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10006569",
+  "pdf": "https://openreview.net/forum?id=yHxSKM9kdr",
+  "category": "KV Cache",
+  "branch": "淘汰与保留",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "合并聚类",
+   "按需检索"
+  ],
+  "scenario": [],
+  "summary": "结合语义 token 聚类和 PagedAttention 管理 KV Cache，改进 token 选择；在 LongBench 上 256 token 预算下保持原模型 99% 的准确率。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-retroattention",
+  "title": "Retrospective Sparse Attention for Efficient Long-Context Generation",
+  "authors": [
+   "Seonghwan Choi",
+   "Beomseok Kang",
+   "Dongwon Jo",
+   "jae-joon kim"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10009559",
+  "pdf": "https://openreview.net/forum?id=Ql0G1Zsobn",
+  "category": "KV Cache",
+  "branch": "补偿与恢复",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "针对 KV 压缩在长解码中累积的注意力误差，用后续解码步到达的 KV 回溯修正过去的注意力输出；与现有 KV 压缩方法相比，有效 KV 暴露量最多提高 1.6 倍，准确率最多提高 21.9%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-progressive-thought-encoding",
+  "title": "Training Large Reasoning Models Efficiently via Progressive Thought Encoding",
+  "authors": [
+   "Zeliang Zhang",
+   "Xiaodong Liu",
+   "Hao Cheng",
+   "Hao Sun",
+   "Chenliang Xu",
+   "Jianfeng Gao"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10007286",
+  "pdf": "https://openreview.net/forum?id=q4iJxp47CT",
+  "category": "KV Cache",
+  "branch": "补偿与恢复",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "把中间推理逐步编码成紧凑表示，使大推理模型能在固定大小缓存下推理，缓解滑动窗口缓存带来的性能下降；推理时内存恒定，紧缓存预算下 AIME 上最多提高 23.4 个点。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-dare",
+  "title": "Efficient Multimodal Spatial Reasoning via Dynamic and Asymmetric Routing",
+  "authors": [
+   "Yixian Shen",
+   "Qi Bi",
+   "Zihan Wang",
+   "Zhiheng Yang",
+   "Changshuo Wang",
+   "Zhi Zhang",
+   "Prayag Tiwari",
+   "Andy Pimentel",
+   "Anuj Pathania"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10010953",
+  "pdf": "https://openreview.net/forum?id=BQASoLmREU",
+  "category": "图像视觉 token",
+  "branch": "Token 剪枝",
+  "modality": [
+   "图像",
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "淘汰"
+  ],
+  "scenario": [],
+  "summary": "针对多模态空间推理中自回归累积的冗余 token，按网络深度、推理跳数和模态自适应裁剪，并配合渐进式 KV 保留策略；平均减少 40.37% FLOPs 和 46.07% KV Cache 用量。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-sparsity-forcing",
+  "title": "Sparsity Forcing: Reinforcing Token Sparsity of MLLMs",
+  "authors": [
+   "Feng Chen",
+   "YEFEI HE",
+   "Lequan Lin",
+   "Jing Liu",
+   "Chenhui Gou",
+   "Bohan Zhuang",
+   "Qi Wu"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008099",
+  "pdf": "https://openreview.net/forum?id=gxNTP2eER3",
+  "category": "图像视觉 token",
+  "branch": "压缩感知训练",
+  "modality": [
+   "图像",
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "用强化学习后训练把 token 节省纳入端到端奖励，在十三个图像和视频基准上把 Qwen2-VL／Qwen2.5-VL 的 token 削减率从 20% 提高到 75%，长上下文推理内存最多减少 3 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-focus",
+  "title": "FOCUS: Efficient Keyframe Selection for Long Video Understanding",
+  "authors": [
+   "Zirui Zhu",
+   "Hailun Xu",
+   "Yang Luo",
+   "LIU YONG",
+   "Kanchan Sarkar",
+   "Zhenheng Yang",
+   "Yang You"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10011835",
+  "pdf": "https://openreview.net/forum?id=1OQKqLFcbB",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长视频"
+  ],
+  "summary": "针对小时级视频的 token 预算，把严格预算下的关键帧选择建模为多臂老虎机组合探索，先定位高价值片段再选帧；在四个长视频问答基准上处理不到 2% 的视频帧。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-vqos",
+  "title": "A Training-Free Framework for Long Video Understanding via Video-Query-Options Similarity",
+  "authors": [
+   "Zhirong Wu",
+   "Xiaodong Wang",
+   "Langling Huang",
+   "Teng Xu",
+   "Peixi Peng"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008035",
+  "pdf": "https://openreview.net/forum?id=hfMfYMoRLk",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长视频"
+  ],
+  "summary": "针对输入 token 容量限制，免训练地在高相关片段加密采样、在低相关片段降低分辨率，并融合查询与候选答案来计算相关度。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-photon",
+  "title": "Photon: Speedup Volume Understanding with Efficient Multimodal Large Language Models",
+  "authors": [
+   "Chengyu Fang",
+   "Heng Guo",
+   "Zheng Jiang",
+   "Chunming He",
+   "Xiu Li",
+   "Minfeng Xu"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10006614",
+  "pdf": "https://openreview.net/forum?id=xsSJw6jJBL",
+  "category": "3D、具身与领域专用",
+  "branch": "其他领域专用",
+  "modality": [
+   "3D",
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "医学"
+  ],
+  "summary": "面向 3D 医学影像问答，用指令条件化的 token 调度在训练和推理中自适应减少 token，生成可变长度的 token 序列，并用正则保证视觉证据的可靠使用。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-memer",
+  "title": "Scaling up Memory for Robotic Control via Experience Retrieval",
+  "authors": [
+   "Ajay Sridhar",
+   "Jennifer Pan",
+   "Satvik Sharma",
+   "Chelsea Finn"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10011810",
+  "pdf": "https://openreview.net/forum?id=1dH4ARGdwD",
+  "category": "3D、具身与领域专用",
+  "branch": "机器人操作",
+  "modality": [
+   "视频",
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "机器人"
+  ],
+  "summary": "针对直接使用长观测历史开销大的问题，由高层策略从经验中选择并跟踪任务相关关键帧，结合最近帧生成指令，实现长时依赖推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "hf-2026-045",
   "title": "Density-aware Soft Context Compression with Semi-Dynamic Compression Ratio",
   "authors": [
