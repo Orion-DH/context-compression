@@ -25,9 +25,7 @@
   "mechanism": [
    "潜在编码"
   ],
-  "scenario": [
-   "RAG"
-  ],
+  "scenario": [],
   "summary": "Compress-then-Rank 将段落预压缩为可缓存的多向量表示，联合训练压缩器与 LLM 重排序器，替代完整段落输入。",
   "added": "2026-11-08",
   "source": [
@@ -1743,6 +1741,962 @@
   "mechanism": [],
   "scenario": [],
   "summary": "提出将上下文放置、压缩与调度联合优化的研究计划，包括显著性保留、分层压缩和预取；摘要以未来工作为主，不能当作已验证的完整算法结果。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-sparse-dllm",
+  "title": "Sparse-dLLM: Accelerating Diffusion LLMs with Dynamic Cache Eviction",
+  "authors": [
+   "Song, Yuerong",
+   "Liu, Xiaoran",
+   "Li, Ruixiao",
+   "Liu, Zhigeng",
+   "Huang, Zengfeng",
+   "Guo, Qipeng",
+   "He, Ziwei",
+   "Qiu, Xipeng"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "核心方法",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40586",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40586/44547",
+  "category": "KV Cache",
+  "branch": "淘汰与保留",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "淘汰"
+  ],
+  "scenario": [],
+  "summary": "压缩对象是扩散式 LLM 的解码缓存。Sparse-dLLM 依据跨步骤稳定的 token 显著性，免训练地保留关键 token、淘汰前后缀缓存；在 LLaDA 和 Dream 系列上吞吐最高为原始 dLLM 的 10 倍，性能相近。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-retrolm",
+  "title": "RetroLM: Retrieval-Augmented KVs for Long-Context Processing",
+  "authors": [
+   "Luo, Kun",
+   "Liu, Zheng",
+   "Xiao, Shitao",
+   "Chen, Jiabei",
+   "Qian, Hongjin",
+   "Zhang, Peitian",
+   "Jiang, Shanshan",
+   "Dong, Bin",
+   "Zhao, Jun",
+   "Liu, Kang"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "核心方法",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40511",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40511/44472",
+  "category": "KV Cache",
+  "branch": "淘汰与保留",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "按需检索"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "把 KV Cache 切成连续页面，只检索并解码关键页，将 RAG 从文本块下沉到 KV 层，并省去重复编码上下文的开销。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-subgcache",
+  "title": "SubGCache: Accelerating Graph-based RAG with Subgraph-level KV Cache",
+  "authors": [
+   "Zhu, Qiuyu",
+   "Zhang, Liang",
+   "Xu, Qianxiong",
+   "Long, Cheng",
+   "Zhang, Jie"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40827",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40827/44788",
+  "category": "KV Cache",
+  "branch": "共享与复用",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "按子图嵌入聚类查询，为代表子图预计算 KV Cache 并跨查询复用；减少的是重复编码，不缩短提示本身。在三个数据集上首 token 时延最多降低 6.68 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-timebill",
+  "title": "TimeBill: Time-Budgeted Inference for Large Language Models",
+  "authors": [
+   "Fan, Qi",
+   "Zou, An",
+   "Ma, Yehan"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40317",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40317/44278",
+  "category": "KV Cache",
+  "branch": "预算分配",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "淘汰"
+  ],
+  "scenario": [],
+  "summary": "预测响应长度和执行时间，再按给定时间预算自适应调整 KV Cache 淘汰比例；主线是时间约束推理，缓存淘汰是实现手段。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-reason",
+  "title": "ReaSon: Reinforced Causal Search with Information Bottleneck for Video Understanding",
+  "authors": [
+   "Zhou, Yuan",
+   "Hua, Litao",
+   "Jin, Shilong",
+   "Huang, Wentao",
+   "Duan, Haoran"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "核心方法",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38387",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/38387/42349",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "针对 VLM 输入 token 受限，用因果信息瓶颈定义关键帧，并以强化学习策略选择既有预测充分性又有因果必要性的帧。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-tspo",
+  "title": "TSPO: Temporal Sampling Policy Optimization for Long-form Video Language Understanding",
+  "authors": [
+   "Tang, Canhui",
+   "Han, Zifan",
+   "Sun, Hongbo",
+   "Zhou, Sanping",
+   "Zhang, Xuchong",
+   "Wei, Xin",
+   "Yuan, Ye",
+   "Zhang, Huayu",
+   "Xu, Jinglin",
+   "Sun, Hao"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "核心方法",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37896",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/37896/41858",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长视频"
+  ],
+  "summary": "面向 MLLM 上下文上限，用事件感知的时序 agent 做概率式关键帧选择，并以强化学习联合优化采样策略与语言生成。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-hark",
+  "title": "HARK: Hierarchical Agentic Retrieval with Keyframing for Video Understanding (Student Abstract)",
+  "authors": [
+   "Li, Jingcheng",
+   "Qiao, Ye",
+   "Huang, Sitao"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "学生摘要",
+  "relevance": "其他录用类型",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/42237",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/42237/46198",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "学生摘要。将视频分为动作和场景单元构成层次记忆，并按问题选择关键帧；摘要报告的 70.3% 准确率仅针对 VideoMME 短视频集，规模和验证有限。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-dynamicselect",
+  "title": "Seeing Is Believing: Grounding Long-Video Understanding in Spatio-Temporal Visual Evidence",
+  "authors": [
+   "Wei, Zhaoyang",
+   "Wang, Guoliang",
+   "Gao, Guohua",
+   "Hao, Yanchao",
+   "Li, Mingda",
+   "Ding, Wenchao",
+   "Chen, Xi",
+   "He, Shizhu",
+   "Yu, Xuehui"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38031",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/38031/41993",
+  "category": "视频与音视频",
+  "branch": "时空 token 压缩",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长视频"
+  ],
+  "summary": "论文同时提出证据式评测 EV²-Bench 和 token 压缩系统 DynamicSelect；后者用动态语义选择和层次压缩浓缩显著信息。压缩是两项贡献之一。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-apvr",
+  "title": "APVR: Hour-Level Long Video Understanding with Adaptive Pivot Visual Information Retrieval",
+  "authors": [
+   "Gao, Hong",
+   "Bao, Yiming",
+   "Tu, Xuezhen",
+   "Zhong, Bin",
+   "Yue, Linan",
+   "Zhang, Min-Ling"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "核心方法",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/42406",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/42406/46367",
+  "category": "视频与音视频",
+  "branch": "时空 token 压缩",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "长视频"
+  ],
+  "summary": "免训练地先检索相关帧，再在最多 1024 个枢纽帧内做查询感知的 token 选择，以两级粒度保留小时级视频的重要视觉信息。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-videochat-a1",
+  "title": "VideoChat-A1: Thinking with Long Videos by Chain-of-Shot Reasoning",
+  "authors": [
+   "Wang, Zikang",
+   "Chen, Boyu",
+   "Yue, Zhengrong",
+   "Wang, Yi",
+   "Qiao, Yu",
+   "Wang, Limin",
+   "Wang, Yali"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38018",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/38018/41980",
+  "category": "视频与音视频",
+  "branch": "主动证据获取",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "长视频",
+   "Agent"
+  ],
+  "summary": "长视频 agent 沿镜头链逐步选择相关镜头并由粗到细查看，主动获取时序上下文；主线是长视频推理，证据筛选是其实现方式。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-mars",
+  "title": "Hearing More with Less: Multi-Modal Retrieval-and-Selection Augmented Conversational LLM-Based ASR",
+  "authors": [
+   "Mu, Bingshen",
+   "Liu, Hexin",
+   "Xue, Hongfei",
+   "Wei, Kun",
+   "Xie, Lei"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40528",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40528/44489",
+  "category": "视频与音视频",
+  "branch": "音视频联合压缩",
+  "modality": [
+   "音频",
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "多轮对话"
+  ],
+  "summary": "基于 LLM 的对话语音识别不再使用固定或完整历史，而是按声学和文本相似度检索并选择最相关的历史上下文，减少冗余；任务限于语音识别。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-timeaudio",
+  "title": "Listening Between the Frames: Bridging Temporal Gaps in Large Audio-Language Models",
+  "authors": [
+   "Wang, Hualei",
+   "Li, Yiming",
+   "Ma, Shuo",
+   "Liu, Hong",
+   "Wang, Xiangdong"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39827",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/39827/43788",
+  "category": "视频与音视频",
+  "branch": "音视频联合压缩",
+  "modality": [
+   "音频"
+  ],
+  "mechanism": [
+   "合并聚类"
+  ],
+  "scenario": [],
+  "summary": "面向大音频语言模型的时间定位与长音频理解，其中片段级 token 合并模块用于减少音频 token 冗余；压缩只是配套组件。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-urag",
+  "title": "URaG: Unified Retrieval and Generation in Multimodal LLMs for Efficient Long Document Understanding",
+  "authors": [
+   "Shi, Yongxin",
+   "Wang, Jiapeng",
+   "Shan, Zeyu",
+   "Peng, Dezhi",
+   "Lin, Zening",
+   "Jin, Lianwen"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "核心方法",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39729",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/39729/43690",
+  "category": "图像视觉 token",
+  "branch": "文档与 GUI",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长文档",
+   "文档与 GUI"
+  ],
+  "summary": "把 MLLM 早期层改造成证据选择器，保留最相关页面并丢弃无关内容，使检索和生成统一在一个模型内；摘要称计算开销降低 44-56%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-regionrag",
+  "title": "RegionRAG: Region-level Retrieval-Augmented Generation for Visual Document Understanding",
+  "authors": [
+   "Li, Yinglu",
+   "Lu, Zhiying",
+   "Liu, Zhihang",
+   "Sun, Yiwei",
+   "Liu, Chuanbin",
+   "Xie, Hongtao"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37597",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/37597/41559",
+  "category": "图像视觉 token",
+  "branch": "文档与 GUI",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "RAG",
+   "文档与 GUI"
+  ],
+  "summary": "将多模态 RAG 的检索单元从整页细化到语义区域，只向生成器提供相关视觉内容；与此前方法相比，视觉 token 用量为 71.42%，问答准确率提高 3.56%。压缩来自检索粒度变化。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-token-routing",
+  "title": "Efficient Segmentation with Multimodal Large Language Model via Token Routing",
+  "authors": [
+   "Wen, Changsong",
+   "Peng, Zelin",
+   "Huang, Yu",
+   "Shen, Wei"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38032",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/38032/41994",
+  "category": "图像视觉 token",
+  "branch": "Token 合并与聚类",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "用于 MLLM 分割：mask token 延后到深层加入，图像 token 仅少量代理走完整计算，其余由代理引导更新。视觉 token 数量不减少，节省的是逐层计算，FLOPs 降至 56%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-em-kd",
+  "title": "EM-KD: Distilling Efficient Multimodal Large Language Model with Unbalanced Vision Tokens",
+  "authors": [
+   "Feng, Ze",
+   "Yang, Sen",
+   "Duan, Boqiang",
+   "Yang, Wankou",
+   "Wang, Jingdong"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39254",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/39254/43215",
+  "category": "图像视觉 token",
+  "branch": "压缩感知训练",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "针对压缩视觉 token 带来的信息损失，用匈牙利匹配对齐师生间数量不等的视觉 token，再做亲和度和语义蒸馏；属于训练期补偿，本身不提出新的压缩算子。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-dap-icot",
+  "title": "Let’s Think with Images Efficiently! An Interleaved-Modal Chain-of-Thought Reasoning Framework with Dynamic and Precise Visual Thoughts",
+  "authors": [
+   "Liu, Xu",
+   "Zhang, Yongheng",
+   "Chen, Qiguang",
+   "Li, Yao",
+   "Wang, Sheng",
+   "Qin, Libo"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40494",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40494/44455",
+  "category": "图像视觉 token",
+  "branch": "指令引导聚焦",
+  "modality": [
+   "图像",
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "交错模态思维链按推理需要动态插入视觉信息；插入图像数显著减少，token 消耗下降 72.6%。主线是推理框架，降耗来自动态插入策略。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-tiv",
+  "title": "TIV: Thought Injection via Vectors for Efficient Reasoning in Large Reasoning Models",
+  "authors": [
+   "Cao, Yi",
+   "Shi, Weijie",
+   "Xu, Wei-Jie",
+   "Shen, Yucheng",
+   "Cui, Yue",
+   "Guo, Hanghui",
+   "Di, Shimin",
+   "Liu, Ziyi",
+   "Li, Jiaming",
+   "Zhou, Alexander",
+   "Zhu, Jia",
+   "Xu, Jiajie"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40264",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40264/44225",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用可学习向量注入隐藏状态，把逐 token 的思考压缩成紧凑向量；保持原有 99% 以上准确率时输出长度平均减少 65% 以上。压缩的是生成的推理过程，而非输入上下文。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-memguide",
+  "title": "MemGuide: Intent-Driven Memory Selection for Goal-Oriented Multi-Session LLM Agents",
+  "authors": [
+   "Du, Yiming",
+   "Wang, Bingbing",
+   "He, Yang",
+   "Liang, Bin",
+   "Wang, Baojun",
+   "Li, Zhongyang",
+   "Gui, Lin",
+   "Pan, Jeff Z.",
+   "Xu, Ruifeng",
+   "Wong, Kam-Fai"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40313",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40313/44274",
+  "category": "Agent 历史与工作记忆",
+  "branch": "状态化与按需回读",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "Agent",
+   "多轮对话"
+  ],
+  "summary": "面向多会话任务型对话，按意图检索记忆单元，再按槽位补全增益重排过滤，控制写回上下文的记忆；属于记忆选择而非显式压缩。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-safesieve",
+  "title": "SafeSieve: From Heuristics to Experience in Progressive Pruning for LLM-based Multi-Agent Communication",
+  "authors": [
+   "Zhang, Ruijia",
+   "Zhao, Xinyan",
+   "Wang, Ruixiang",
+   "Chen, Sigen",
+   "Zhang, Guibin",
+   "Zhang, An",
+   "Wang, Kun",
+   "Wen, Qingsong"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40236",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40236/44197",
+  "category": "Agent 历史与工作记忆",
+  "branch": "轨迹压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "Agent",
+   "多 Agent"
+  ],
+  "summary": "渐进式剪除多 Agent 间的低效通信链路，结合语义评估和运行反馈；在 SVAMP、HumanEval 等基准上 token 用量减少 12.4%-27.8%。压缩对象是通信拓扑而非单条消息。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-autolink",
+  "title": "AutoLink: Autonomous Schema Exploration and Expansion for Scalable Schema Linking in Text-to-SQL at Scale",
+  "authors": [
+   "Wang, Ziyang",
+   "Zheng, Yuanlei",
+   "Cao, Zhenbiao",
+   "Zhang, Xiaojin",
+   "Wei, Zhongyu",
+   "Fu, Pei",
+   "Luo, Zhenbo",
+   "Chen, Wei",
+   "Bai, Xiang"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40672",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40672/44633",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "因完整数据库 schema 超出上下文窗口，用 agent 迭代探索并扩展 schema 子集，无需输入全量 schema；适用范围限于 text-to-SQL。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-schema-on-inside",
+  "title": "Schema on the Inside: A Two-Phase Fine-Tuning Method for High-Efficiency Text-to-SQL at Scale",
+  "authors": [
+   "Soni, Chinmay",
+   "Chourasia, Shivam",
+   "Kumar, Gaurav",
+   "Kapoor, Hitesh"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/41446",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/41446/45407",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "参数化写入"
+  ],
+  "scenario": [],
+  "summary": "通过两阶段微调把数据库 schema 写入模型，输入从 1.7 万 token 降到 100 以内；这是针对固定 schema 的业务部署，schema 变化时需重新训练。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-htsir",
+  "title": "Improving Long-Context Summarization with Multi-Granularity Retrieval Optimization",
+  "authors": [
+   "Chen, Xueyu",
+   "Song, Kaitao",
+   "Song, Zifan",
+   "Li, Dongsheng",
+   "Zhao, Cairong"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40283",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40283/44244",
+  "category": "文本与检索上下文",
+  "branch": "RAG 文档压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写",
+   "按需检索"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "检索前对连续文本做多粒度摘要并建检索树，再重排和修订；压缩发生在语料预处理阶段，主线是提升检索和摘要质量。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-tadarag",
+  "title": "TAdaRAG: Task Adaptive Retrieval-Augmented Generation via On-the-Fly Knowledge Graph Construction",
+  "authors": [
+   "Zhang, Jie",
+   "Tang, Bo",
+   "Shao, Wanzi",
+   "Wei, Wenqiang",
+   "Zhao, Jihao",
+   "Zhu, Jianqing",
+   "Li, Zhiyu",
+   "Xi, Wen",
+   "Lin, Zehao",
+   "Xiong, Feiyu",
+   "Tan, Yanchao"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40774",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40774/44735",
+  "category": "文本与检索上下文",
+  "branch": "RAG 文档压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "针对检索内容被切块和冗余的问题，按任务即时抽取知识图谱，提供简洁、非冗余的知识；压缩是结构化抽取的结果。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-logicrag",
+  "title": "You Don’t Need Pre-Built Graphs for RAG: Retrieval Augmented Generation with Adaptive Reasoning Structures",
+  "authors": [
+   "Chen, Shengyuan",
+   "Zhou, Chuang",
+   "Yuan, Zheng",
+   "Zhang, Qinggang",
+   "Cui, Zeyang",
+   "Chen, Hao",
+   "Xiao, Yilin",
+   "Cao, Jiannong",
+   "Huang, Xiao"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40278",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40278/44239",
+  "category": "文本与检索上下文",
+  "branch": "RAG 文档压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "按查询动态构建推理结构来指导检索，并用图剪枝减少冗余检索、用上下文剪枝过滤无关内容；剪枝是框架的配套组件。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-chipmind",
+  "title": "ChipMind: Retrieval-Augmented Reasoning for Long-Context Circuit Design Specifications",
+  "authors": [
+   "Xing, Changwen",
+   "Wong, SamZaak",
+   "Wan, Xinlai",
+   "Lu, Yanfeng",
+   "Zhang, Mengli",
+   "Ma, Zebin",
+   "Qi, Lei",
+   "Li, Zhengxiong",
+   "Guan, Nan",
+   "Jiang, Zhe",
+   "Wang, Xi",
+   "Yang, Jun"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "扩展相关",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/37107",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/37107/41069",
+  "category": "3D、具身与领域专用",
+  "branch": "其他领域专用",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "长文档"
+  ],
+  "summary": "针对上下文窗口受限，将芯片设计规范构建为知识图谱，用自适应检索和意图感知语义过滤去除无关内容；依赖领域知识图谱，压缩是配套环节。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "aaai-2026-videollm-harmful-omission",
+  "title": "Failures to Surface Harmful Contents in Video Large Language Models",
+  "authors": [
+   "Cao, Yuxin",
+   "Song, Wei",
+   "Wang, Derui",
+   "Xue, Jingling",
+   "Dong, Jin Song"
+  ],
+  "year": 2026,
+  "venue": "AAAI 2026",
+  "track": "主技术轨道",
+  "relevance": "分析研究",
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40841",
+  "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40841/44802",
+  "category": "评测、机理与可靠性",
+  "branch": "保真、鲁棒与安全",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "分析 VideoLLM 漏报有害内容的原因，指出稀疏均匀采帧和激进的 token 下采样造成覆盖与空间信息损失，并据此构造黑盒攻击；研究的是视觉压缩的安全代价，不提出压缩方法。",
   "added": "2026-11-08",
   "source": [
    "正式发表"
