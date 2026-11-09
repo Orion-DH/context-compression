@@ -12,6 +12,33 @@ TOP_KEYS = set(REQUIRED) | {"source", "pdf", "code", "hf", "arxiv", "hfDate", "a
 OTHER_RELEVANCE = "其他录用类型"
 
 
+def check_acceptance(paper):
+    errors = []
+    sources = paper.get("source") or []
+    acceptance = paper.get("acceptance")
+    if acceptance == "作者声明" and not paper.get("acceptanceNote"):
+        errors.append("作者声明必须填写 acceptanceNote")
+    if paper.get("acceptanceNote") and acceptance != "作者声明":
+        errors.append("只有作者声明可以填写 acceptanceNote")
+    if paper.get("venue") == "HF Daily":
+        if acceptance == "官方确认":
+            errors.append("HF Daily 条目不能标记为官方确认")
+        if "正式发表" in sources:
+            errors.append("HF Daily 条目的 source 不能包含正式发表")
+    else:
+        if acceptance != "官方确认":
+            errors.append("已填写正式发表渠道的条目必须是官方确认")
+        if "正式发表" not in sources:
+            errors.append("已填写正式发表渠道的条目 source 必须包含正式发表")
+    if "HF Daily" in sources and not (paper.get("hf") and paper.get("hfDate")):
+        errors.append("来源含 HF Daily 时必须填写 hf 和 hfDate")
+    return errors
+
+
+def title_key(title):
+    return re.sub(r"[\W_]+", "", str(title or "").casefold())
+
+
 def check(paper, taxonomy):
     errors = [f"缺少字段 {k}" for k in REQUIRED if paper.get(k) in (None, "", [])]
     errors += [f"未知字段 {k}" for k in paper if k not in TOP_KEYS]
@@ -30,6 +57,9 @@ def check(paper, taxonomy):
         errors.append("authors 必须是数组")
     if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(paper.get("added", ""))):
         errors.append("added 必须是 YYYY-MM-DD")
+    if "hfDate" in paper and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(paper["hfDate"])):
+        errors.append("hfDate 必须是 YYYY-MM-DD")
+    errors += check_acceptance(paper)
     for key in ("url", "pdf", "code", "hf", "arxiv"):
         if key in paper and not str(paper[key]).startswith(("http://", "https://")):
             errors.append(f"{key} 必须是 http(s) 链接")
@@ -64,12 +94,16 @@ def main():
 
     failed = False
     seen = set()
+    seen_titles = set()
     for index, paper in enumerate(papers):
         label = paper.get("id") or f"第 {index + 1} 条"
         errors = check(paper, taxonomy)
         if paper.get("id") in seen:
             errors.append("id 重复")
         seen.add(paper.get("id"))
+        if title_key(paper.get("title")) in seen_titles:
+            errors.append("标题重复")
+        seen_titles.add(title_key(paper.get("title")))
         for error in errors:
             failed = True
             print(f"[{label}] {error}")
