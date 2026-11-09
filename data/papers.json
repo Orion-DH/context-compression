@@ -17013,6 +17013,428 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "icml-2026-lt-tuning",
+  "title": "Latent Thoughts Tuning: Bridging Context and Reasoning with Fused Information in Latent Tokens",
+  "authors": [
+   "Weihao Liu",
+   "Dehai Min",
+   "Lu Cheng"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/63956",
+  "pdf": "https://openreview.net/forum?id=SFTFsixO2K",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "融合上下文隐藏状态和词表嵌入的预测语义来构造潜在思考，并通过三阶段课程学习在潜在和显式推理间动态切换，缓解特征坍缩。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-slvr",
+  "title": "Semantic-Enriched Latent Visual Reasoning",
+  "authors": [
+   "Tianrun Xu",
+   "Yue Sun",
+   "Qixun Wang",
+   "Jingyi Lu",
+   "Yuan Wang",
+   "Tianren Zhang",
+   "Longteng Guo",
+   "Fengyun Rao",
+   "Jing LYU",
+   "Feng Chen",
+   "Jing Liu"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "扩展相关",
+  "url": "https://icml.cc/virtual/2026/poster/65458",
+  "pdf": "https://openreview.net/forum?id=DTuBIEhSF3",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用属性级监督学习语义丰富的区域潜在表示，再用多查询强化学习对齐，以潜在空间推理替代显式的图像思考。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-ldpvr",
+  "title": "Thinking in Latent Space: Progressive Multimodal Simplification for Visual Reasoning",
+  "authors": [
+   "Yuesen Tang",
+   "Yiming Yang",
+   "Tengfei Bao",
+   "Yu Tong"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "扩展相关",
+  "url": "https://icml.cc/virtual/2026/poster/66264",
+  "pdf": "https://openreview.net/forum?id=5IA4cx8Gzz",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "把多模态推理建模为递归状态简化，用潜在转移引导显式文本状态逐步精炼，并按潜在语义检索视觉证据；保留部分显式文本。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-flair",
+  "title": "The Silent Thought: Modeling Internal Cognition in Full-Duplex Spoken Dialogue Models via Latent Reasoning",
+  "authors": [
+   "Donghang Wu",
+   "Tianyu Zhang",
+   "Yuxin Li",
+   "Hexin Liu",
+   "Chen Chen",
+   "EngSiong Chng",
+   "Yoshua Bengio"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "扩展相关",
+  "url": "https://icml.cc/virtual/2026/poster/62081",
+  "pdf": "https://openreview.net/forum?id=jzUCodmd4C",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "音频",
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "在全双工语音对话中，于用户说话阶段把上一步潜在嵌入递归送入下一步，实现不增加时延的潜在思考；适用范围是语音对话。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-latentchem",
+  "title": "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning",
+  "authors": [
+   "Xinwu Ye",
+   "Yicheng Mao",
+   "Yuxuan Liao",
+   "Jia Zhang",
+   "Yimeng (Yoyo) Liu",
+   "Hao Li",
+   "Fang Wu",
+   "Zhiwei Li",
+   "Zehong Wang",
+   "Zhiyuan Liu",
+   "Zhenfei Yin",
+   "Li Yuan",
+   "Phil Torr",
+   "Huan Sun",
+   "xiangxiang Zeng",
+   "Mengdi Wang",
+   "Le Cong",
+   "Shenghua Gao",
+   "Robert Tang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/63674",
+  "pdf": "https://openreview.net/forum?id=Ul6hU6WkDL",
+  "category": "3D、具身与领域专用",
+  "branch": "其他领域专用",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用连续思考向量分离化学逻辑和语言生成；在只优化任务结果时，模型自发放弃冗长文本推导而转向隐式潜在计算。适用范围是化学推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-lara-vla",
+  "title": "Latent Reasoning VLA: Latent Thinking and Prediction for Vision-Language-Action Models",
+  "authors": [
+   "Shuanghao Bai",
+   "Jing Lyu",
+   "Wanqi Zhou",
+   "Zhe Li",
+   "Dakai Wang",
+   "Lei Xing",
+   "Xiaoguang Zhao",
+   "Pengwei Wang",
+   "Zhongyuan Wang",
+   "Cheng Chi",
+   "Badong Chen",
+   "Shanghang Zhang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/64290",
+  "pdf": "https://openreview.net/forum?id=P64X2q1n1H",
+  "category": "3D、具身与领域专用",
+  "branch": "机器人操作",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "机器人"
+  ],
+  "summary": "把多模态思维链内化为连续潜在表示，推理时不再显式生成思维链，以课程式训练从显式监督过渡到潜在推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-last0",
+  "title": "LaST$_{0}$: Latent Spatio-Temporal Chain-of-Thought for Robotic Vision-Language-Action Model",
+  "authors": [
+   "Zhuoyang Liu",
+   "Jiaming Liu",
+   "Hao Chen",
+   "Jiale Yu",
+   "Ziyu Guo",
+   "Chengkai Hou",
+   "Xiangju Mi",
+   "Chenyang Gu",
+   "Renrui Zhang",
+   "Kun Wu",
+   "Zhengping Che",
+   "Jian Tang",
+   "Pheng Ann Heng",
+   "Shanghang Zhang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Spotlight",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61887",
+  "pdf": "https://openreview.net/forum?id=lwOoBzJykL",
+  "category": "3D、具身与领域专用",
+  "branch": "机器人操作",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "机器人"
+  ],
+  "summary": "用 token 高效的潜在时空思维链建模未来视觉动态、3D 结构和本体状态，减少显式推理带来的时延。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-ava-vla-latent",
+  "title": "Think Less, Act Early: Reinforced Latent Reasoning with Early Exit in Vision-Language-Action Models",
+  "authors": [
+   "Dianqiao Lei",
+   "Lianlei Shan"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61571",
+  "pdf": "https://openreview.net/forum?id=op2bPlSv2o",
+  "category": "3D、具身与领域专用",
+  "branch": "机器人操作",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "机器人"
+  ],
+  "summary": "把推理建模为潜在变量序列，绕过显式文本生成，并用强化学习去噪和提前退出在深度与效率间权衡。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-latent-cot-causal",
+  "title": "Dynamics Within Latent Chain-of-Thought: An Empirical Study of Causal Structure",
+  "authors": [
+   "Zirui Li",
+   "Xuefeng Bai",
+   "Kehai Chen",
+   "Yizhi Li",
+   "Jian Yang",
+   "Chenghua Lin",
+   "Min zhang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "分析研究",
+  "url": "https://icml.cc/virtual/2026/poster/62057",
+  "pdf": "https://openreview.net/forum?id=kHB8m3ojGe",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "把潜在思维链建模为结构因果模型，用逐步干预分析 Coconut 和 CODI 中各步的因果作用。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-cot-vs-latent-thought",
+  "title": "A Formal Comparison Between Chain of Thought and Latent Thought",
+  "authors": [
+   "Kevin Xu",
+   "Issei Sato"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "分析研究",
+  "url": "https://icml.cc/virtual/2026/poster/62807",
+  "pdf": "https://openreview.net/forum?id=d6BqyajwMj",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "形式化比较思维链和潜在思考：潜在思考支持高效并行计算，思维链可通过随机解码实现近似计数。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-latent-cot-supervision",
+  "title": "What Makes Effective Supervision in Latent Chain-of-Thought: An Information-Theoretic Analysis",
+  "authors": [
+   "Xinghao Chen",
+   "Chak Tou Leong",
+   "Wenjin Guo",
+   "Jian Wang",
+   "Wenjie Li",
+   "Xiaoyu Shen"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "分析研究",
+  "url": "https://icml.cc/virtual/2026/poster/60743",
+  "pdf": "https://openreview.net/forum?id=x21YkF1UfR",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "从信息论分析潜在思维链的失败模式，比较轨迹监督和空间监督，指出僵硬的几何压缩会使推理空间坍缩。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-latent-visual-reasoning-causal",
+  "title": "Imagination Helps Visual Reasoning, But Not Yet in Latent Space",
+  "authors": [
+   "You Li",
+   "Chi Chen",
+   "Yanghao Li",
+   "Fanhu Zeng",
+   "Kaiyu Huang",
+   "Xu Jinan",
+   "Maosong Sun"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "分析研究",
+  "url": "https://icml.cc/virtual/2026/poster/61980",
+  "pdf": "https://openreview.net/forum?id=l1cMErXg1P",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "用因果中介分析检验潜在视觉推理，发现潜在 token 与输入和答案之间的因果联系都较弱。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "hf-2026-001",
   "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
   "authors": [
@@ -19050,6 +19472,335 @@
    "长推理"
   ],
   "summary": "发现推理不同阶段的熵与回答长度相关，据此设计分阶段的熵奖励，抑制思考阶段的过度探索，控制推理长度。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-sim-cot",
+  "title": "SIM-CoT: Supervised Implicit Chain-of-Thought",
+  "authors": [
+   "Xilin Wei",
+   "Xiaoran Liu",
+   "Yuhang Zang",
+   "Xiaoyi Dong",
+   "Yuhang Cao",
+   "Jiaqi Wang",
+   "Xipeng Qiu",
+   "Dahua Lin"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10011368",
+  "pdf": "https://openreview.net/forum?id=6YRJ4jmVQl",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "针对隐式思维链训练不稳定的问题，用训练时的辅助解码器把每个隐式 token 对齐到显式推理步骤；在 GPT-2 上比显式思维链 token 效率高 2.3 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-swireasoning",
+  "title": "SwiReasoning: Switch-Thinking in Latent and Explicit for Pareto-Superior Reasoning LLMs",
+  "authors": [
+   "Dachuan Shi",
+   "Abedelkadir Asi",
+   "Keying Li",
+   "Xiangchi Yuan",
+   "Leyan Pan",
+   "Wenke Lee",
+   "Wen Xiao"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10007015",
+  "pdf": "https://openreview.net/forum?id=t33kMzEAg8",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "免训练地按分块置信度在显式和潜在推理间动态切换，提高 token 效率并缓解潜在推理的发散问题。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-ladir",
+  "title": "LaDiR: Latent Diffusion Enhances LLMs for Text Reasoning",
+  "authors": [
+   "Haoqiang Kang",
+   "Yizhe Zhang",
+   "Nikki Kuang",
+   "Nicklas Majamaki",
+   "Navdeep Jaitly",
+   "Yian Ma",
+   "Lianhui Qin"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10006490",
+  "pdf": "https://openreview.net/forum?id=z5cPEZ4n6i",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用 VAE 把文本推理步骤编码为紧凑的思考 token 块，再用潜在扩散模型做分块迭代精炼，替代逐 token 的自回归推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-soft-tokens",
+  "title": "Soft Tokens, Hard Truths",
+  "authors": [
+   "Natasha Butt",
+   "Ariel Kwiatkowski",
+   "Ismail Labiad",
+   "Julia Kempe",
+   "Yann Ollivier"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://iclr.cc/virtual/2026/poster/10011124",
+  "pdf": "https://openreview.net/forum?id=9JjKTp8Jmy",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "首次用强化学习规模化训练连续思维链，以混合 token 和嵌入噪声探索；主线是表达能力，不直接缩短上下文。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-ltpo",
+  "title": "Thinking on the Fly: Test-Time Reasoning Enhancement via Latent Thought Policy Optimization",
+  "authors": [
+   "Wengao Ye",
+   "Yan Liang",
+   "Lianlei Shan"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://iclr.cc/virtual/2026/poster/10007186",
+  "pdf": "https://openreview.net/forum?id=r1WEQzkCQv",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "把潜在思考向量视为可在推理时优化的参数，用置信度奖励进行在线策略梯度优化，无需更新模型参数；主线是提升潜在推理鲁棒性。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-lto",
+  "title": "Latent Thinking Optimization: Your Latent Reasoning Language Model Secretly Encodes Reward Signals in Its Latent Thoughts",
+  "authors": [
+   "Hanwen Du",
+   "Yuxin Dong",
+   "Xia Ning"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://iclr.cc/virtual/2026/poster/10011705",
+  "pdf": "https://openreview.net/forum?id=2jkAk3EP0v",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "分析潜在思考模型 Huginn-3.5B 的潜在表示，用分类器预测答案正确性并优化潜在思考过程；主线是监督和优化。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-lvr",
+  "title": "Latent Visual Reasoning",
+  "authors": [
+   "Bangzheng Li",
+   "Ximeng Sun",
+   "Jiang Liu",
+   "Ze Wang",
+   "Jialian Wu",
+   "Xiaodong Yu",
+   "Emad Barsoum",
+   "Muhao Chen",
+   "Zicheng Liu"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "扩展相关",
+  "url": "https://iclr.cc/virtual/2026/poster/10007908",
+  "pdf": "https://openreview.net/forum?id=j84WR5ORsC",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "让语言模型在视觉嵌入空间中自回归生成潜在状态并重建关键视觉 token，与文本生成交错进行。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-latentr3",
+  "title": "Reinforced Latent Reasoning for LLM-based Recommendation",
+  "authors": [
+   "Yang Zhang",
+   "Wenxin Xu",
+   "Xiaoyan Zhao",
+   "Wenjie Wang",
+   "Fuli Feng",
+   "Xiangnan He",
+   "Tat-Seng Chua"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008315",
+  "pdf": "https://openreview.net/forum?id=eUtIZT2ONS",
+  "category": "3D、具身与领域专用",
+  "branch": "其他领域专用",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "把推荐中的显式思维链替换为少量紧凑潜在 token，消除思维链生成并提高推理效率；适用范围是推荐系统。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-soft-thinking-mechanism",
+  "title": "LLMs are Single-threaded Reasoners: Demystifying the Working Mechanism of Soft Thinking",
+  "authors": [
+   "Junhong Wu",
+   "Jinliang Lu",
+   "Zixuan Ren",
+   "Gangqiang Hu",
+   "Zhi Wu",
+   "Dai Dai",
+   "hua wu"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "分析研究",
+  "url": "https://iclr.cc/virtual/2026/poster/10011037",
+  "pdf": "https://openreview.net/forum?id=ASLuOoP78o",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "用探针分析软思考，发现模型主要依赖软输入中概率最高的 token，并行探索的假设并不成立。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-continuous-cot-superposition",
+  "title": "Emergence of Superposition: Unveiling the Training Dynamics of Chain of Continuous Thought",
+  "authors": [
+   "Hanlin Zhu",
+   "Shibo Hao",
+   "Zhiting Hu",
+   "Jiantao Jiao",
+   "Stuart Russell",
+   "Yuandong Tian"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "分析研究",
+  "url": "https://iclr.cc/virtual/2026/poster/10007636",
+  "pdf": "https://openreview.net/forum?id=lsJwX9Jf5u",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "理论分析连续思维链中叠加机制在训练中的形成过程，研究对象是简化的两层 Transformer。",
   "added": "2026-11-08",
   "source": [
    "正式发表"
@@ -21291,6 +22042,358 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "acl-2026-laser",
+  "title": "Forest Before Trees: Latent Superposition for Efficient Visual Reasoning",
+  "authors": [
+   "Yubo Wang",
+   "Juntian Zhang",
+   "Yichen Wu",
+   "Yankai Lin",
+   "Nils Lukas",
+   "Yuhan Liu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.517/",
+  "pdf": "https://aclanthology.org/2026.acl-long.517.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用动态窗口对齐学习做潜在视觉推理，让潜在状态先保持全局特征再收敛到局部细节；摘要报告推理 token 减少 97% 以上。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-ivt-lr",
+  "title": "Reasoning in the Dark: Interleaved Vision-Text Reasoning in Latent Space",
+  "authors": [
+   "Chao Chen",
+   "Zhixin Ma",
+   "Yongqi Li",
+   "Yupeng Hu",
+   "Yinwei Wei",
+   "Wenjie Li",
+   "Liqiang Nie"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1949/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1949.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "把多模态推理的每一步表示为潜在文本和潜在视觉两部分，在潜在空间中交错推理，替代显式视觉文本步骤。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-ilvr",
+  "title": "Interleaved Latent Visual Reasoning with Selective Perceptual Modeling",
+  "authors": [
+   "Shuai Dong",
+   "Siyuan Wang",
+   "Xingyu Liu",
+   "Chenglin Li",
+   "Haowen Hou",
+   "Zhongyu Wei"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.1351/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1351.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "在文本生成中交错插入不断演化的潜在视觉表示，避免反复编码像素图像，并用动量教师选择性蒸馏监督目标。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-self-softcot",
+  "title": "Self-SoftCoT: A Self-Consistent Framework via Position-Aware Latent Space Reinforcement Learning",
+  "authors": [
+   "Liangliang Dong",
+   "Lianlei Shan",
+   "Shuaimin Li"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.1496/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1496.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "让冻结的大模型内部生成并使用潜在思考，无需外部辅助模型，建立先思考后输出的闭环，以缓解离散 token 的表达瓶颈。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-selar",
+  "title": "SeLaR: Selective Latent Reasoning in Large Language Models",
+  "authors": [
+   "Renyu Fu",
+   "Guibo Luo"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.320/",
+  "pdf": "https://aclanthology.org/2026.acl-long.320.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "免训练地只在低置信步骤启用软嵌入、高置信步骤保持离散解码，并用对比正则防止软嵌入坍缩；主线是提升潜在推理效果。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-lepo",
+  "title": "LEPO: Latent Reasoning Policy Optimization for Large Language Models",
+  "authors": [
+   "Yuyan Zhou",
+   "Jiarui Yu",
+   "Hande Dong",
+   "Zhezheng Hao",
+   "Hong Wang",
+   "Jianqing Zhang",
+   "Qiang Lin"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.findings-acl.707/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.707.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "用 Gumbel-Softmax 为潜在推理注入随机性，使强化学习可直接作用于连续潜在表示；主线是优化潜在推理策略。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-spiralthinker",
+  "title": "SpiralThinker: Latent Reasoning through an Iterative Process with Text–Latent Interleaving",
+  "authors": [
+   "Shengmin Piao",
+   "Sanghyun Park"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.findings-acl.1605/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1605.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "在潜在表示上迭代更新，并让潜在和文本推理步骤交错进行，用渐进对齐目标稳定潜在推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-parallel-tts-latent",
+  "title": "Parallel Test-Time Scaling for Latent Reasoning Models",
+  "authors": [
+   "Runyang You",
+   "Yongqi Li",
+   "Meng Liu",
+   "Wenjie Wang",
+   "Liqiang Nie",
+   "Wenjie Li"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.2069/",
+  "pdf": "https://aclanthology.org/2026.acl-long.2069.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "为潜在推理模型引入基于不确定性的采样和潜在奖励模型，使其能像显式思维链一样并行采样并聚合；主线是提升潜在推理效果。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-alca",
+  "title": "Resolving the Security-Auditability Dilemma with Auditable Latent Chain-of-Thought Alignment",
+  "authors": [
+   "Guan Wang",
+   "Biyu Zhou",
+   "Xuehai Tang",
+   "Jizhong Han",
+   "Songlin Hu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.1570/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1570.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "把安全审议过程移入连续潜在空间，降低显式推理被攻击利用的风险；主线是安全对齐，不是压缩。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-latent-reasoning-interpretability",
+  "title": "Unlocking the Black Box of Latent Reasoning: An Interpretability-Guided Approach to Intervention",
+  "authors": [
+   "Shuochen Chang",
+   "Tong Bai",
+   "Xiaofeng Zhang",
+   "Qianli Ma",
+   "Qingyang Liu",
+   "Zhaohe Liao",
+   "Yibo Miao",
+   "Li Niu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "分析研究",
+  "url": "https://aclanthology.org/2026.acl-long.1568/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1568.pdf",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "用结构、因果和几何探针分析潜在推理，发现潜在向量编码了压缩且忠实的推理步骤，并据此设计免训练的解码时干预。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-continuous-space-tts",
+  "title": "Towards Inference-time Scaling for Continuous Space Reasoning",
+  "authors": [
+   "Minghan Wang",
+   "Thuy-Trang Vu",
+   "Ehsan Shareghi",
+   "Gholamreza Haffari"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "分析研究",
+  "url": "https://aclanthology.org/2026.findings-acl.1338/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1338.pdf",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "研究推理时扩展能否迁移到连续空间推理，发现离散空间的奖励模型方法在连续思考空间中只带来有限改进。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "hf-2026-065",
   "title": "VTC-R1: Vision-Text Compression for Efficient Long-Context Reasoning",
   "authors": [
@@ -21604,6 +22707,147 @@
   "venue": "CVPR 2026",
   "track": "主会",
   "relevance": "核心方法",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "cvpr-2026-mirage",
+  "title": "Machine Mental Imagery: Empower Multimodal Reasoning with Latent Visual Tokens",
+  "authors": [
+   "Zeyuan Yang",
+   "Xueyang Yu",
+   "Delin Chen",
+   "Maohao Shen",
+   "Chuang Gan"
+  ],
+  "year": 2026,
+  "venue": "CVPR 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Yang_Machine_Mental_Imagery_Empower_Multimodal_Reasoning_with_Latent_Visual_Tokens_CVPR_2026_paper.html",
+  "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yang_Machine_Mental_Imagery_Empower_Multimodal_Reasoning_with_Latent_Visual_Tokens_CVPR_2026_paper.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [],
+  "summary": "在 VLM 解码中加入潜在视觉 token，需要视觉思考时把隐藏状态作为下一 token，无需生成像素图像。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "cvpr-2026-fast-thinkact",
+  "title": "Fast-ThinkAct: Efficient Vision-Language-Action Reasoning via Verbalizable Latent Planning",
+  "authors": [
+   "Chi-Pin Huang",
+   "Yunze Man",
+   "Zhiding Yu",
+   "Min-Hung Chen",
+   "Jan Kautz",
+   "Yu-Chiang Frank Wang",
+   "Fu-En Yang"
+  ],
+  "year": 2026,
+  "venue": "CVPR 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_Fast-ThinkAct_Efficient_Vision-Language-Action_Reasoning_via_Verbalizable_Latent_Planning_CVPR_2026_paper.html",
+  "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_Fast-ThinkAct_Efficient_Vision-Language-Action_Reasoning_via_Verbalizable_Latent_Planning_CVPR_2026_paper.pdf",
+  "category": "3D、具身与领域专用",
+  "branch": "机器人操作",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "机器人"
+  ],
+  "summary": "从教师模型蒸馏可解码的潜在思维链，实现紧凑规划；摘要报告推理时延最多减少 89.3%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "cvpr-2026-fantasyvln",
+  "title": "FantasyVLN: Unified Multimodal Chain-of-Thought Reasoning for Vision-and-Language Navigation",
+  "authors": [
+   "Jing Zuo",
+   "Lingzhou Mu",
+   "Fan Jiang",
+   "Chengcheng Ma",
+   "Mu Xu",
+   "Yonggang Qi"
+  ],
+  "year": 2026,
+  "venue": "CVPR 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Zuo_FantasyVLN_Unified_Multimodal_Chain-of-Thought_Reasoning_for_Vision-and-Language_Navigation_CVPR_2026_paper.html",
+  "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Zuo_FantasyVLN_Unified_Multimodal_Chain-of-Thought_Reasoning_for_Vision-and-Language_Navigation_CVPR_2026_paper.pdf",
+  "category": "3D、具身与领域专用",
+  "branch": "导航",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "导航"
+  ],
+  "summary": "把想象的视觉 token 编码进隐式推理框架，保留思维链的好处，同时避免多模态思维链的 token 膨胀。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "cvpr-2026-colavla",
+  "title": "ColaVLA: Leveraging Cognitive Latent Reasoning for Hierarchical Parallel Trajectory Planning in Autonomous Driving",
+  "authors": [
+   "Qihang Peng",
+   "Xuesong Chen",
+   "Chenye Yang",
+   "Shaoshuai Shi",
+   "Hongsheng Li"
+  ],
+  "year": 2026,
+  "venue": "CVPR 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Peng_ColaVLA_Leveraging_Cognitive_Latent_Reasoning_for_Hierarchical_Parallel_Trajectory_Planning_CVPR_2026_paper.html",
+  "pdf": "https://openaccess.thecvf.com/content/CVPR2026/papers/Peng_ColaVLA_Leveraging_Cognitive_Latent_Reasoning_for_Hierarchical_Parallel_Trajectory_Planning_CVPR_2026_paper.pdf",
+  "category": "3D、具身与领域专用",
+  "branch": "自动驾驶",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "自动驾驶"
+  ],
+  "summary": "把推理从文本转到统一潜在空间，将场景理解压缩为紧凑的元动作嵌入，只需两次 VLM 前向。",
   "added": "2026-11-08",
   "source": [
    "正式发表"
