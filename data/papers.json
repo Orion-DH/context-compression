@@ -16772,6 +16772,247 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "icml-2026-selr",
+  "title": "Think in Latent, Explain in Language: Self-Explainable Latent Reasoning",
+  "authors": [
+   "Dayuan Zhao",
+   "Shengcao Cao",
+   "Yu-Xiong Wang",
+   "Liang-Yan Gui"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/62920",
+  "pdf": "https://openreview.net/forum?id=bsgrUQ0RIY",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用同一模型完成潜在推理并解码其潜在表示，在把冗长推理压缩为紧凑嵌入的同时保持可解释性。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-conpress",
+  "title": "ConPress: Learning Efficient Reasoning from Multi-Question Contextual Pressure",
+  "authors": [
+   "Jie Deng",
+   "Shining Liang",
+   "Jun Li",
+   "Hongzhi Li",
+   "Yutao Xie"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61485",
+  "pdf": "https://openreview.net/forum?id=piXLPucLRA",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "发现单提示多问题时模型会自发压缩推理，用该现象采样简洁轨迹并做监督微调，把压缩行为内化到单问题场景。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-smartthinker",
+  "title": "SmartThinker: Progressive Chain-of-Thought Length Calibration for Efficient Large Language Model Reasoning",
+  "authors": [
+   "Chenzhi Hu",
+   "Qinzhe Hu",
+   "Yuhang Xu",
+   "Junyi Chen",
+   "Ruijie Wang",
+   "Shengzhong Liu",
+   "Jianxin Li",
+   "Fan Wu",
+   "Guihai Chen"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/64022",
+  "pdf": "https://openreview.net/forum?id=RciRcJ9LHw",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "在 GRPO 训练中动态估计最优长度并调节长度奖励系数，避免过度压缩；长度压缩最多达 52.6%，准确率提高。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-slat",
+  "title": "SLAT: Segment-Level Adaptive Trimming for Efficient CoT Reasoning",
+  "authors": [
+   "Jian Yao",
+   "Xiongcai Luo",
+   "Ran Cheng",
+   "KC Tan"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/64229",
+  "pdf": "https://openreview.net/forum?id=PlHlnsoaJc",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "理论刻画片段的次优性，用强化学习选择性抑制边际效用低的冗余片段；推理长度比未压缩基线减少 50%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-thoughtfold",
+  "title": "ThoughtFold: Folding Reasoning Chains via Introspective Preference Learning",
+  "authors": [
+   "Ziyan Liu",
+   "Xueda Shen",
+   "Yuzhe Gu",
+   "Songyang Gao",
+   "Kuikun Liu",
+   "Cheng",
+   "Chengqi Lyu",
+   "Dahua Lin",
+   "Wenwei Zhang",
+   "Kai Chen"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61398",
+  "pdf": "https://openreview.net/forum?id=qeeD6aZLLX",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "在正确轨迹内识别冗余探索并用掩码偏好优化惩罚，把推理链折叠得更简洁；在 DeepSeek-R1-Distill-Qwen-7B 上 token 用量减少约 56%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-bcr",
+  "title": "Batched Contextual Reinforcement",
+  "authors": [
+   "Bangji Yang",
+   "Hongbo Ma",
+   "Jiajun Fan",
+   "Ge Liu"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/65968",
+  "pdf": "https://openreview.net/forum?id=8Oc3Mx754M",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "训练模型在共享上下文窗口中同时解决多道题，形成隐式 token 预算，使模型自主去除冗余推理；单题推理时 token 用量减少 15.8%-62.6%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-pixelthink",
+  "title": "Don't Overthink with Pixels: Efficient Reasoning for Segmentation",
+  "authors": [
+   "Song Wang",
+   "Gongfan Fang",
+   "Lingdong Kong",
+   "Xiangtai Li",
+   "Jianyun Xu",
+   "Sheng Yang",
+   "Qiang Li",
+   "Jianke Zhu",
+   "Xinchao Wang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61221",
+  "pdf": "https://openreview.net/forum?id=sXRZoMhNFo",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "结合任务难度和模型不确定性调节推理长度，让分割模型按场景复杂度压缩推理；时延降低 30.4%，token 用量减少 48.2%。适用范围是推理分割。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "hf-2026-001",
   "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
   "authors": [
@@ -18651,6 +18892,171 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "iclr-2026-deepcompress",
+  "title": "DeepCompress: A Dual Reward Strategy for Dynamically Exploring and Compressing Reasoning Chains",
+  "authors": [
+   "Tian Liang",
+   "Wenxiang Jiao",
+   "Zhiwei He",
+   "Jiahao Xu",
+   "Haitao Mi",
+   "Dong Yu"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10010156",
+  "pdf": "https://openreview.net/forum?id=K5A2jBmEBK",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "实时判断问题难易，对简单题鼓励短推理、对难题鼓励长探索，从而动态压缩思维链而不牺牲准确率。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-lcpo",
+  "title": "Pruning Long Chain-of-Thought of Large Reasoning Models via Small-Scale Preference Optimization",
+  "authors": [
+   "Bin Hong",
+   "Jiayu Liu",
+   "Kai Zhang",
+   "Jianwen Sun",
+   "Mengdi Zhang",
+   "Zhenya Huang"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10011162",
+  "pdf": "https://openreview.net/forum?id=8xSU8Oscvg",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "在统一的偏好优化框架下提出长度控制方法 LCPO，用少量数据和训练学习长度偏好，平均输出长度减少 50% 以上。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-frost",
+  "title": "FROST: Filtering Reasoning Outliers with Attention for Efficient Reasoning",
+  "authors": [
+   "Haozheng Luo",
+   "Zhuolin Jiang",
+   "Md Zahid Hasan",
+   "Yan Chen",
+   "Soumalya Sarkar"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008733",
+  "pdf": "https://openreview.net/forum?id=a9dngZLqGS",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用注意力权重识别并移除句子级的推理离群内容；相比基础模型平均减少 69.68% 的 token，准确率提高 26.70%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-laser",
+  "title": "Learn to Reason Efficiently with Adaptive Length-based Reward Shaping",
+  "authors": [
+   "Wei Liu",
+   "Ruochen Zhou",
+   "Yiyun Deng",
+   "Yuzhen Huang",
+   "Junteng LIU",
+   "Yuntian Deng",
+   "Yizhe Zhang",
+   "Junxian He"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10008026",
+  "pdf": "https://openreview.net/forum?id=hj9eKpqxQl",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "把高效推理方法统一为基于长度的奖励塑形，提出按目标长度的阶跃奖励方法 LASER 及其自适应扩展，以减少推理冗余。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "iclr-2026-pear",
+  "title": "PEAR: Phase Entropy Aware Reward for Efficient Reasoning",
+  "authors": [
+   "Chen Huang",
+   "Wei Lu",
+   "Wenxuan Zhang"
+  ],
+  "year": 2026,
+  "venue": "ICLR 2026",
+  "track": "Poster",
+  "relevance": "核心方法",
+  "url": "https://iclr.cc/virtual/2026/poster/10010398",
+  "pdf": "https://openreview.net/forum?id=HLc2igXEA3",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "发现推理不同阶段的熵与回答长度相关，据此设计分阶段的熵奖励，抑制思考阶段的过度探索，控制推理长度。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "hf-2026-045",
   "title": "Density-aware Soft Context Compression with Semi-Dynamic Compression Ratio",
   "authors": [
@@ -19979,6 +20385,905 @@
   ],
   "scenario": [],
   "summary": "发现大语音语言模型深层存在冗余，用基于相似度的免训练 token 合并压缩语音表示；prefill FLOPs 减少 27.48%，长语音上内存节省约 1.7 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-asc",
+  "title": "Activation Steering for Chain-of-Thought Compression",
+  "authors": [
+   "Seyedarmin Azizi",
+   "Erfan Baghaei Potraghloo",
+   "Souvik Kundu",
+   "Massoud Pedram"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1828/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1828.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "ASC 从少量冗长与简洁思维链样本中学习引导向量，在推理时调整内部表示以生成简洁思维链；五个推理基准上生成长度最多减少 69.4%，准确率保持。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-step-pruner",
+  "title": "Beyond Token Length: Step Pruner for Efficient and Accurate Reasoning in Large Language Models",
+  "authors": [
+   "Canhui Wu",
+   "Qiong Cao",
+   "Chang Li",
+   "Zhenfang Wang",
+   "Chao Xue",
+   "Yuwei Fan",
+   "Wei Xi",
+   "Xiaodong He"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.94/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.94.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用步骤感知的强化学习奖励惩罚冗余推理步骤，并加入动态停止机制防止合并步骤的作弊行为；在 AIME24 上 token 用量减少 69.7%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-crisp",
+  "title": "CRISP: Compressing Redundancy in Chain-of-Thought via Intrinsic Saliency Pruning",
+  "authors": [
+   "Yangsong Lan",
+   "Hongliang Dai",
+   "Piji Li"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1961/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1961.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "利用 </think> token 的注意力模式区分必要推理和冗余内容，指导原子压缩操作；在多个模型和数学数据集上减少 50-60% 的 token。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-graph-cot-pruning",
+  "title": "Graph-Based Chain-of-Thought Pruning for Reducing Redundant Reflections in Reasoning LLMs",
+  "authors": [
+   "Hongyuan Yuan",
+   "Xinran He",
+   "Run Shao",
+   "Bolei He",
+   "Xianwei Xue",
+   "Mengke Chen",
+   "Qiutong Pan",
+   "Haiwei Wang",
+   "Haifeng Li"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.281/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.281.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "将线性思维链转成依赖图，按分支和深度两个层面剪除低贡献反思和后期重复验证，再蒸馏到模型中；平均推理 token 减少 42%，准确率保持或提高。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-stack",
+  "title": "Think Less, Know More: State-Aware Reasoning Compression with Knowledge Guidance for Efficient Reasoning",
+  "authors": [
+   "Yi Sui",
+   "Chaozhuo Li",
+   "Dawei Song"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1128/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1128.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "按推理状态逐步压缩思维链，对不确定状态用知识引导压缩、对过长但自信的状态用自提示压缩，并结合答案收敛的提前停止。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-drp",
+  "title": "DRP: Distilled Reasoning Pruning with Mathematical Skill-aware Step Decomposition for Efficient Large Reasoning Models",
+  "authors": [
+   "Yuxuan Jiang",
+   "Dawei Li",
+   "Francis Ferraro"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.196/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.196.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "由教师模型按数学技能分解并剪枝推理步骤，再蒸馏给学生模型；GSM8K 上 token 从 917 降到 328，准确率从 91.7% 提高到 94.1%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-pace",
+  "title": "PACE: Prefix-Protected and Difficulty-Aware Compression for Efficient Reasoning",
+  "authors": [
+   "Ruixiang Feng",
+   "Yuntao Wen",
+   "Silin Zhou",
+   "Ke Shi",
+   "Yifan Wang",
+   "Ran Le",
+   "Zhenwei An",
+   "Zongchao Chen",
+   "Chen Yang",
+   "Guangyue Peng",
+   "Yiming Jia",
+   "Dongsheng Wang",
+   "Tao Zhang",
+   "Lisi Chen",
+   "Yang Song",
+   "Shen Gao",
+   "Shuo Shang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1545/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1545.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "在序列层面保护前缀推理、在问题组层面按难度调整长度约束，避免一刀切压缩；数学基准上 token 用量最多减少 55.7%，准确率最多提高 4.1%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-pru-cot",
+  "title": "Pru-CoT: Towards Efficient Reasoning Distillation via Pruning Chain-of-Thought",
+  "authors": [
+   "Han Liu",
+   "Shuotian Ma",
+   "Hui Li",
+   "Xiaotong Zhang",
+   "Fenglong Ma",
+   "Hong Yu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1684/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1684.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "摘要改写"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "通过全局优化评估推理步骤的因果贡献，进行保真约束的剪枝并合成简洁思维链，用于提升推理蒸馏效果。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-lc-r1",
+  "title": "Optimizing Length Compression in Large Reasoning Models",
+  "authors": [
+   "Zhengxiang Cheng",
+   "Dongping Chen",
+   "Mingyang Fu",
+   "Tianyi Zhou"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.146/",
+  "pdf": "https://aclanthology.org/2026.acl-long.146.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "针对得出答案后反复验证的“无效思考”，用长度奖励和专门的压缩奖励做后训练，序列长度减少约 50%，准确率下降约 2%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-o1-pruner",
+  "title": "O1-Pruner: Length-Harmonizing Fine-Tuning for O1-Like Reasoning Pruning",
+  "authors": [
+   "Haotian Luo",
+   "Haiying He",
+   "Yibo Wang",
+   "Shiwei Liu",
+   "Wei Li",
+   "Xiaochun Cao",
+   "Dacheng Tao",
+   "Naiqiang Tan",
+   "Li Shen"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.697/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.697.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "先估计模型基线表现，再用强化学习式微调鼓励在准确率约束下生成更短的推理过程，减少长思考模型的冗余。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-dad",
+  "title": "Concise Math Reasoning via Difficulty-Aware Distillation",
+  "authors": [
+   "Yifan Wu",
+   "Jingze Shi",
+   "Bingheng Wu",
+   "Jiayi Zhang",
+   "Xiaotian Lin",
+   "Yizhang Zhu",
+   "Zhaoyang Yu",
+   "Bang Liu",
+   "Chenglin Wu",
+   "Nan Tang",
+   "Yuyu Luo"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.2155/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.2155.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "由教师模型评估题目难度并改写解答、只保留关键步骤，构建 10 万条简短推理语料 LiteCoT 用于蒸馏训练。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sgp-cot",
+  "title": "Your Reasoning Model Knows What Counts: Self-Guided Chain-of-Thought Pruning for Efficient Reasoning",
+  "authors": [
+   "Zi-Ao Ma",
+   "Xian-Ling Mao",
+   "Tian Lan",
+   "Chen Xu",
+   "Zhijing Wu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.25/",
+  "pdf": "https://aclanthology.org/2026.acl-long.25.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用模型自身的似然信号评估语义片段的必要性，移除多余片段并构造偏好对，让模型学习自引导的思维链剪枝。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sas",
+  "title": "Stabilizing Efficient Reasoning with Step-Level Advantage Selection",
+  "authors": [
+   "Han Wang",
+   "Xiaodong Yu",
+   "Jialian Wu",
+   "Jiang Liu",
+   "Ximeng Sun",
+   "Mohit Bansal",
+   "Zicheng Liu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1333/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1333.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "发现短上下文后训练本身就会压缩推理但不稳定，提出步骤级优势选择来稳定训练；平均推理长度减少 30% 以上，Pass@1 同时提高。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-claro",
+  "title": "CLARO: Controlled Attribute-Driven Reasoning Optimization for Efficient Chain-of-Thought",
+  "authors": [
+   "Oded Schlesinger",
+   "Young Kyung Kim",
+   "J. Matias Di Martino",
+   "Guillermo Sapiro"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1335/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1335.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用强化学习引导模型在用户给定 token 预算内形成结构良好、低冗余的思维链，使简洁成为结构化思考的结果，而非强制长度惩罚。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-tldr",
+  "title": "Too Long, Do Re-weighting for Efficient LLM Reasoning Compression",
+  "authors": [
+   "Zhong-Zhi Li",
+   "Xiao Liang",
+   "Zihao Tang",
+   "Lei Ji",
+   "Peijie Wang",
+   "Haotian Xu",
+   "Xing W",
+   "Haizhen Huang",
+   "Weiwei Deng",
+   "Yeyun Gong",
+   "Zhijiang Guo",
+   "Xiao Liu",
+   "Fei Yin",
+   "Cheng-Lin Liu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.1856/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1856.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "持续平衡 System-1 与 System-2 训练数据的权重来消除冗余推理，无需复杂标注；输出 token 减少近 40%，推理准确率保持。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sigma",
+  "title": "Exploration-Exploitation Reshaping towards Efficient Reasoning for Large Language Models",
+  "authors": [
+   "Yufeng Shi",
+   "Weilin Luo",
+   "Yuxiang Zhang",
+   "Zongmeng Zhang",
+   "Haoyang Liu",
+   "Yubing Wang",
+   "Bin Wang",
+   "Wengang Zhou",
+   "Houqiang Li"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1520/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1520.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用自模仿利用和自引导探索重塑强化学习训练，按压缩率动态采样并用自改写策略引导，以缩短思维链且不损失准确率。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-cat",
+  "title": "CAT: Confidence-Adaptive Thinking for Efficient Reasoning of Large Reasoning Models",
+  "authors": [
+   "Qizhi Jiang",
+   "Shuo Wang",
+   "Pei Ke",
+   "Yuhang Song",
+   "Ke Qin"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Industry",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-industry.152/",
+  "pdf": "https://aclanthology.org/2026.acl-industry.152.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "把模型自身的置信度信号加入偏好优化，压缩高置信回答、保留不确定问题的思考长度，避免统一长度压缩损害难题。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sat",
+  "title": "SAT: Balancing Reasoning Accuracy and Efficiency with Stepwise Adaptive Thinking",
+  "authors": [
+   "Weiyang Huang",
+   "Xuefeng Bai",
+   "Kehai Chen",
+   "Xinyang Chen",
+   "Yibin Chen",
+   "Weili Guan",
+   "Min Zhang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.2009/",
+  "pdf": "https://aclanthology.org/2026.acl-long.2009.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "把推理建模为具有慢、正常、快、跳过四种模式的状态机，由轻量奖励模型进行步骤级、按难度的剪枝；推理 token 最多减少 40%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-attnpo",
+  "title": "AttnPO: Attention-Guided Process Supervision for Efficient Reasoning",
+  "authors": [
+   "Shuaiyi Nie",
+   "Dingsiyu",
+   "Wenyuan Zhang",
+   "Linhao Yu",
+   "Tianmeng Yang",
+   "Yao Chen",
+   "Weichong Yin",
+   "Yu Sun",
+   "Hua Wu",
+   "Tingwen Liu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.1845/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1845.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "利用模型内部专注必要步骤的注意力头做步骤级奖励分配，抑制冗余步骤并减轻对必要步骤的惩罚，缓解过度思考。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-dot",
+  "title": "Anti-Length Shift: Dynamic Outlier Truncation for Training Efficient Reasoning Models",
+  "authors": [
+   "Wei Wu",
+   "Liyi Chen",
+   "Congxi Xiao",
+   "Tianfu Wang",
+   "Qimeng Wang",
+   "Chengqiang Lu",
+   "Yan Gao",
+   "Yiwu",
+   "Yao Hu",
+   "Hui Xiong"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.1047/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1047.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "训练时只截断全对样本组中极端长回答的尾部以抑制冗余 token，并配合 KL 正则和动态采样，保留复杂问题的长推理能力。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-muto",
+  "title": "Think Better, Not Longer: Token-Level Marginal Utility for Efficient Reasoning in Large Reasoning Models",
+  "authors": [
+   "Jiawei Li",
+   "Yang Gao",
+   "Huashan Sun",
+   "Chong Feng"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.1386/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1386.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用逐 token 边际效用识别并惩罚降低正确答案似然的推理内容；在 1.5B 模型上平均 token 减少 87.1%，准确率提高 2.3%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-lazy-length-penalty",
+  "title": "Shorten After You’re Right: Lazy Length Penalties for Reasoning RL",
+  "authors": [
+   "Danlong Yuan",
+   "Tian Xie",
+   "Shaohan Huang",
+   "Huishuai Zhang",
+   "Zhuocheng Gong",
+   "Chong Luo",
+   "Furu Wei",
+   "Dongyan Zhao"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.626/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.626.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "在强化学习中只对正确且超出容忍范围的轨迹施加延迟长度惩罚，同时缩短推理长度和训练 rollout；逻辑推理场景中减少 40%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-leash",
+  "title": "LEASH: Adaptive Length Penalty and Reward Shaping for Efficient Large Reasoning Model",
+  "authors": [
+   "Yanhao Li",
+   "Lu Ma",
+   "Jiaran Zhang",
+   "Lexiang Tang",
+   "Wentao Zhang",
+   "Guibo Luo"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.129/",
+  "pdf": "https://aclanthology.org/2026.acl-long.129.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用拉格朗日原始对偶方法动态调整长度惩罚系数，引导模型生成简洁推理；平均推理长度减少 60%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-reasoning-compression-targets",
+  "title": "When Internalization Fails: Finding Better Targets for Reasoning Compression",
+  "authors": [
+   "Mourad Heddaya",
+   "Manley Roberts",
+   "Rohan Wadhawan",
+   "Chenhao Tan"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "分析研究",
+  "url": "https://aclanthology.org/2026.findings-acl.734/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.734.pdf",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "比较截断、ICoT 式课程和直接蒸馏短轨迹三类思维链缩短方法，发现训练后思考文本是更好的蒸馏目标，优于同等 token 预算下的通用摘要；研究范围是竞赛级数学。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-valid-necessary",
+  "title": "Valid Necessary: Diagnosing Latent Inefficiency in Chain-of-Thought",
+  "authors": [
+   "Daeyeop Lee",
+   "Hwanjo Yu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "分析研究",
+  "url": "https://aclanthology.org/2026.findings-acl.1942/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1942.pdf",
+  "category": "评测、机理与可靠性",
+  "branch": "基准",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "提出注入五类低效步骤的诊断基准 RIV-GSM8K 和信息密度指标 CAID，用于识别思维链中有效但低效的步骤，并在后处理压缩中验证其作用。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-reasoning-token-importance",
+  "title": "Do LLMs Encode Functional Importance of Reasoning Tokens ?",
+  "authors": [
+   "Janvijay Singh",
+   "Dilek Hakkani-Tür"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "分析研究",
+  "url": "https://aclanthology.org/2026.acl-long.1419/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1419.pdf",
+  "category": "评测、机理与可靠性",
+  "branch": "机理分析与综述",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "提出保持似然的贪心剪枝，分析模型是否在内部编码推理 token 的功能重要性；用剪枝后思维链训练的学生模型优于基线压缩方法，属于诊断性研究。",
   "added": "2026-11-08",
   "source": [
    "正式发表"
