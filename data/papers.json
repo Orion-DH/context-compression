@@ -16252,6 +16252,526 @@
   "acceptance": "官方确认"
  },
  {
+  "id": "icml-2026-context-folding",
+  "title": "Scaling Long-Horizon Agent via Context Folding",
+  "authors": [
+   "Weiwei Sun",
+   "Lu Miao",
+   "Zhan Ling",
+   "Kang Liu",
+   "Xuesong Yao",
+   "Yiming Yang",
+   "Jiecao Chen"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61950",
+  "pdf": "https://openreview.net/forum?id=lNRgWoGfYg",
+  "category": "Agent 历史与工作记忆",
+  "branch": "轨迹压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "针对 agent 受上下文长度限制的问题，让模型把子任务分支到子轨迹，完成后折叠中间步骤，只保留简洁结果摘要；长时任务上活动上下文最多小到基线的 1/10 时性能仍持平。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-inftythink-plus",
+  "title": "InftyThink+: Effective and Efficient Infinite-Horizon Reasoning via Reinforcement Learning",
+  "authors": [
+   "Yuchen Yan",
+   "Liang Jiang",
+   "Jin Jiang",
+   "Shuaicheng Li",
+   "zujie wen",
+   "Zhiqiang Zhang",
+   "JUN ZHOU",
+   "Jian Shao",
+   "Yueting Zhuang",
+   "Yongliang Shen"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61068",
+  "pdf": "https://openreview.net/forum?id=tyul8kXaJU",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "针对思维链的上下文长度限制，用强化学习优化迭代推理中何时摘要、保留什么、如何继续，由模型控制迭代边界并显式总结中间思考。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-recursive-models",
+  "title": "Recursive Models for Long-Horizon Reasoning",
+  "authors": [
+   "Chenxiao Yang",
+   "Nati Srebro",
+   "Zhiyuan Li"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61752",
+  "pdf": "https://openreview.net/forum?id=nERMuZtneC",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "让模型递归调用自身，在隔离的上下文中解决子任务，理论上证明每个子任务所需活动上下文可指数级小于标准自回归模型；实验任务限于布尔可满足性问题。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-extra-cot",
+  "title": "Towards Efficient Large Language Reasoning Models via Extreme-Ratio Chain-of-Thought Compression",
+  "authors": [
+   "Yuntian Tang",
+   "Bohan Jia",
+   "Wenxuan Huang",
+   "Lianyue Zhang",
+   "Jiao Xie",
+   "Wenxi Li",
+   "Wei Li",
+   "Jie Hu",
+   "Xinghao Chen",
+   "Rongrong Ji",
+   "Shaohui Lin"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/62290",
+  "pdf": "https://openreview.net/forum?id=hwJ2SZtVij",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "用语义保持的压缩器生成高保真监督，并以分层比例策略训练模型按预算生成压缩思维链；在 MATH-500、Qwen3-1.7B 上 token 减少超过 73%，准确率提高 0.6%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-heima",
+  "title": "Efficient Reasoning with Hidden Thinking",
+  "authors": [
+   "Xuan Shen",
+   "Yizhou Wang",
+   "Yufa Zhou",
+   "Xiangxi Shi",
+   "Pu Zhao",
+   "Yanzhi Wang",
+   "Jiuxiang Gu"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/65014",
+  "pdf": "https://openreview.net/forum?id=Hn81xuLaXY",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "软提示与压缩 token",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "面向多模态大模型，把冗长思维链压缩成少量抽象思考 token，并用解释器将其还原为文本，以信息论分析压缩带来的信息差。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-imgcot",
+  "title": "ImgCoT: Compressing Long Chain of Thought into Compact Visual Tokens for Efficient Reasoning of Large Language Model",
+  "authors": [
+   "Xiaoshu Chen",
+   "sihang zhou",
+   "KE LIANG",
+   "Taichun Zhou",
+   "Yaohua Wang",
+   "Yang Gao",
+   "Xinwang Liu"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/63716",
+  "pdf": "https://openreview.net/forum?id=UM6ifyC63p",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "文本转图像",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "图像化渲染",
+   "潜在编码"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "把思维链渲染成图像作为自编码重建目标，使潜在 token 更好地捕捉推理结构，并可补充少量关键文本步骤，以少于完整思维链的 token 完成推理。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-doc-to-lora",
+  "title": "Doc-to-LoRA: Learning to Instantly Internalize Contexts",
+  "authors": [
+   "Rujikorn Charakorn",
+   "Edoardo Cetin",
+   "Shinnosuke Uesaka",
+   "Robert Lange"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/62227",
+  "pdf": "https://openreview.net/forum?id=iW1oBBO72S",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "固定容量与多模态记忆",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "参数化写入"
+  ],
+  "scenario": [],
+  "summary": "用超网络在一次前向中把上下文映射成 LoRA 适配器，后续查询无需再次读入原文；needle-in-a-haystack 任务上序列长度超过模型原生上下文窗口 4 倍以上时，零样本准确率接近完美。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-paratool",
+  "title": "ParaTool: Shifting Tool Representations from Context to Parameters",
+  "authors": [
+   "Zekai Yu",
+   "Qi Meng",
+   "Qizhi Chu",
+   "Yu Hao",
+   "Chuan Shi",
+   "Cheng Yang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/65492",
+  "pdf": "https://openreview.net/forum?id=D3lwvOSuQb",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "参数化写入"
+  ],
+  "scenario": [],
+  "summary": "把工具文档和示例编码为可加载的参数模块，模型调用工具时不再依赖上下文中的文档，从而缓解上下文增长带来的开销；适用范围限于工具调用。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-sivs",
+  "title": "Semantic Impact–Driven Visual Scheduling in Vision-Language Models",
+  "authors": [
+   "Xuan Wang",
+   "Liu Yilin",
+   "Fangxiang Feng",
+   "Caixia Yuan",
+   "Huixing Jiang",
+   "Xiaojie Wang"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61633",
+  "pdf": "https://openreview.net/forum?id=oFZT8HCxmW",
+  "category": "KV Cache",
+  "branch": "淘汰与保留",
+  "modality": [
+   "图像",
+   "文本"
+  ],
+  "mechanism": [
+   "淘汰"
+  ],
+  "scenario": [],
+  "summary": "免训练地按视觉输入对预测分布的语义影响动态调度视觉 KV；摘要称实现约 87% 的视觉 KV 压缩，同时保持 99% 以上的模型性能。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-dynts",
+  "title": "Dynamic Thinking-Token Selection for Efficient Reasoning in Large Reasoning Models",
+  "authors": [
+   "zhenyuan guo",
+   "Tong Chen",
+   "Wenlong Meng",
+   "Chen GONG",
+   "Xin Yu",
+   "Chengkun Wei",
+   "Wenzhi CHEN"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/61200",
+  "pdf": "https://openreview.net/forum?id=sjK6Ii8TWs",
+  "category": "KV Cache",
+  "branch": "淘汰与保留",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "淘汰"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "利用注意力图识别决定答案的思考 token，只保留其 KV 状态并淘汰其余；与原始 Transformers 相比，峰值 KV Cache 内存降低 3.32-5.73 倍，推理性能不受影响。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-semantic-cache-distillation",
+  "title": "Semantic Cache Distillation: Efficient State Transfer via Reuse and Selective Patching",
+  "authors": [
+   "Qianli Ma",
+   "Zhiqing Tang",
+   "Hanshuai Cui",
+   "Zhi Yao",
+   "Weijia Jia"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "扩展相关",
+  "url": "https://icml.cc/virtual/2026/poster/63533",
+  "pdf": "https://openreview.net/forum?id=WLjJqhELBZ",
+  "category": "KV Cache",
+  "branch": "低秩与紧凑重构",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "低秩重构"
+  ],
+  "scenario": [],
+  "summary": "在分离式推理中用紧凑语义编码替代原始 KV 传输，从低秩子空间重建多数层，并在稀疏层打补丁截断误差；压缩目标是跨节点状态传输，而非模型读取的上下文。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-visionpulse",
+  "title": "VisionPulse: Dynamic Visual Sparsity for Efficient Multimodal Reasoning",
+  "authors": [
+   "Hengbo Xu",
+   "Shengjie Jin",
+   "Yanbiao Ma",
+   "Zhiwu Lu"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/65976",
+  "pdf": "https://openreview.net/forum?id=8HeUwrVLIu",
+  "category": "图像视觉 token",
+  "branch": "Token 剪枝",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "在解码过程中逐步估计保留预算并按步骤裁剪视觉 token；每步只保留 5% 的视觉 token，推理链缩短 11.2%，准确率基本不变。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-split-vlm",
+  "title": "SPLIT-VLM: Salience-Guided Partitioning towards Local Coverage for Importance-Aware Token Dropping in Vision-Language Models",
+  "authors": [
+   "Seungil Lee",
+   "Gilha lee",
+   "Hyun Kim"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/65326",
+  "pdf": "https://openreview.net/forum?id=Elm4TdaXi0",
+  "category": "图像视觉 token",
+  "branch": "Token 剪枝",
+  "modality": [
+   "图像",
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "根据隐藏状态跨层变化估计 token 重要性，按区域分配自适应预算并按多样性选择 token；LLaVA-1.5-7B 图像理解任务上保留 192 个视觉 token 时精度超过 99%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-frameoracle",
+  "title": "FrameOracle: Learning What to See and How Much to See in Videos",
+  "authors": [
+   "Chaoyu Li",
+   "Tianzhi Li",
+   "Fei Tao",
+   "ZHENYU ZHAO",
+   "Ziqian Wu",
+   "Maozheng Zhao",
+   "Juntong Song",
+   "Cheng Niu",
+   "Pooyan Fazli"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/63595",
+  "pdf": "https://openreview.net/forum?id=Vd5bjrFQBh",
+  "category": "视频与音视频",
+  "branch": "关键帧选择",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "同时预测哪些帧相关以及需要多少帧；在 16 帧输入上平均减至 10.4 帧且准确率不降，从 64 帧候选减至平均 13.9 帧时准确率提高 1.5%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "icml-2026-flownar",
+  "title": "FlowNar: Scalable Streaming Narration for Long-Form Videos",
+  "authors": [
+   "Zeyun Zhong",
+   "Manuel Martin",
+   "Chengzhi Wu",
+   "David Schneider",
+   "Frederik DIEDERICHS",
+   "Juergen Gall",
+   "Jürgen Beyerer"
+  ],
+  "year": 2026,
+  "venue": "ICML 2026",
+  "track": "Regular",
+  "relevance": "核心方法",
+  "url": "https://icml.cc/virtual/2026/poster/62195",
+  "pdf": "https://openreview.net/forum?id=iqB2sVJTEk",
+  "category": "视频与音视频",
+  "branch": "流式视频记忆",
+  "modality": [
+   "视频"
+  ],
+  "mechanism": [
+   "淘汰"
+  ],
+  "scenario": [
+   "流式视频",
+   "长视频"
+  ],
+  "summary": "用动态上下文管理移除历史视觉上下文，并以 CLAM 记忆模块保留视觉历史，使流式场景的视觉记忆和计算量有界；可处理 10 倍更长的视频，吞吐提高 3 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
   "id": "hf-2026-001",
   "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
   "authors": [
