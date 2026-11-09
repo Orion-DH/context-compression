@@ -43,6 +43,7 @@
     };
     facets = [
       derived("source", "来源", (a, b) => taxonomy.sources.indexOf(a) - taxonomy.sources.indexOf(b)),
+      derived("acceptance", "录用核实", (a, b) => taxonomy.acceptances.indexOf(a) - taxonomy.acceptances.indexOf(b)),
       derived("venue", "发表渠道", (a, b) => a.localeCompare(b)),
       derived("track", "录用类型", (a, b) => taxonomy.trackOrder.indexOf(a) - taxonomy.trackOrder.indexOf(b)),
       ...taxonomy.facets,
@@ -154,6 +155,7 @@
       esc(p.venue),
       p.track === p.venue ? "" : AWARD_RANK[p.track] !== undefined ? `<span class="award">${esc(p.track)}</span>` : esc(p.track),
       p.hfDate ? `HF 收录 ${esc(p.hfDate)}` : "",
+      p.acceptance === "官方确认" ? "" : esc(p.acceptanceNote || p.acceptance),
       esc(p.relevance),
     ].filter(Boolean).join(" · ");
     const rows = taxonomy.facets.map((f) => {
