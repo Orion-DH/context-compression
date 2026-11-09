@@ -295,6 +295,11 @@
     $("scrim").classList.toggle("open");
   });
   $("scrim").addEventListener("click", closeDrawer);
+  window.addEventListener("hashchange", () => {
+    if (!taxonomy) return;
+    readHash();
+    render();
+  });
 
   Promise.all([load("data/papers.json"), load("data/taxonomy.json")])
     .then(([p, t]) => init(p, t))
