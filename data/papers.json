@@ -19297,8 +19297,8 @@
    "Shiyu Li",
    "Peiming Li",
    "Xiaochen Yang",
-   "Yang Tang",
-   "Zheng Wei"
+   "Zheng Wei",
+   "Yang Tang"
   ],
   "year": 2026,
   "venue": "ACL 2026",
@@ -19328,6 +19328,661 @@
   ],
   "summary": "将中间思维链渲染成图像并对齐视觉嵌入，作为紧凑推理表示；属于推理历史表征压缩。",
   "added": "2026-11-08",
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-compass",
+  "title": "COMPASS: Enhancing Agent Long-Horizon Reasoning with Evolving Context",
+  "authors": [
+   "Guangya Wan",
+   "Mingyang Ling",
+   "Xiaoqi Ren",
+   "Rujun Han",
+   "Sheng Li",
+   "Zizhao Zhang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.152/",
+  "pdf": "https://aclanthology.org/2026.acl-long.152.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "轨迹压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "Agent",
+   "多 Agent"
+  ],
+  "summary": "把上下文管理视为长时 agent 的核心瓶颈，由专门的 Context Manager 为不同推理阶段维护简洁的进展摘要，避免长历史带来的遗漏和干扰。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-fs-researcher",
+  "title": "FS-Researcher: Test-Time Scaling for Long-Horizon Research Tasks with File-System-Based Agents",
+  "authors": [
+   "Chiwei Zhu",
+   "Benfeng Xu",
+   "Mingxuan Du",
+   "Shaohan Wang",
+   "Xiaorui Wang",
+   "Zhendong Mao",
+   "Yongdong Zhang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.288/",
+  "pdf": "https://aclanthology.org/2026.acl-long.288.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "状态化与按需回读",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "按需检索"
+  ],
+  "scenario": [
+   "Agent",
+   "多 Agent"
+  ],
+  "summary": "针对深度研究轨迹超出上下文限制，用文件系统作为持久外部记忆，由一个 agent 写笔记和归档来源、另一个 agent 分节读取并写报告。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-mt-osc",
+  "title": "MT-OSC: Path for LLMs that Get Lost in Multi-Turn Conversation",
+  "authors": [
+   "Jyotika Singh",
+   "Fang Tu",
+   "Miguel Ballesteros",
+   "Weiyi Sun",
+   "Sandip Ghoshal",
+   "Michelle Yuan",
+   "Yassine Benajiba",
+   "Sujith Ravi",
+   "Dan Roth"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1354/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1354.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "轨迹压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "摘要改写",
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "多轮对话"
+  ],
+  "summary": "在后台由压缩 agent 增量浓缩聊天历史，并用轻量判别器选择性保留必要信息；10 轮对话中 token 最多减少 72%，准确率提高或保持。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-hisa",
+  "title": "HiSA: Hierarchical State Abstraction for Scalable GUI Agents",
+  "authors": [
+   "Weiming Li",
+   "Hye-young Paik",
+   "Yulei Sui"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.581/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.581.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "结构化记忆",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "摘要改写"
+  ],
+  "scenario": [
+   "Agent",
+   "文档与 GUI"
+  ],
+  "summary": "将 GUI agent 的原始历史组织为抽象步骤、精炼上下文和归纳模式三层，把高维观察合成紧凑语义状态；在 Spider2-V 上比最佳基线减少 69.85% 的 token。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-ledger",
+  "title": "LEDGER: Scaling Agentic Document Editing with Dependency-aware Graph Retrieval",
+  "authors": [
+   "Hang Wang",
+   "Utkarsh Garg",
+   "Reza Davari",
+   "Huitian Jiao",
+   "Hao Cheng",
+   "Baolin Peng",
+   "Si-Qing Chen",
+   "Tao Ge"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.515/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.515.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "状态化与按需回读",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "按需检索"
+  ],
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "构建文档元素的依赖图，每次编辑只检索受影响元素所需的上下文，避免反复处理整篇文档；在 1900 个测试用例上 token 用量减少 85%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-toolscope",
+  "title": "ToolScope: Enhancing LLM Agent Tool Use through Tool Merging and Context-Aware Filtering",
+  "authors": [
+   "Marianne Menglin Liu",
+   "Daniel Garcia",
+   "Fjona Parllaku",
+   "Vikas Upadhyay",
+   "Syed Fahad Allam Shah",
+   "Dan Roth"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.1573/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1573.pdf",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "合并聚类",
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "合并冗余工具，并按查询选择最相关的工具，把工具集压缩到上下文限制之内；在三个工具调用基准上选择准确率提高 8.38%-38.6%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-schemarag",
+  "title": "SchemaRAG: Dynamic Large Schema Reduction for LLM-driven Structured Information Extraction",
+  "authors": [
+   "Sin Yu Bonnie Ho",
+   "Arlie Coles",
+   "Erik Larsson",
+   "Eric Marshall",
+   "Nathan Bodenstab",
+   "Paul Vozila"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Industry",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-industry.78/",
+  "pdf": "https://aclanthology.org/2026.acl-industry.78.pdf",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "针对大型 schema 超出上下文和增加成本的问题，按输入动态裁剪结构化抽取所需的 schema；在医疗和电商数据上 token 成本最多降低 48%。适用范围限于 schema 约束的信息抽取。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-policy-internalization",
+  "title": "Analyzing and Internalizing Complex Policy Documents for LLM Agents",
+  "authors": [
+   "Jiateng Liu",
+   "Zhenhailong Wang",
+   "Xiaojiang Huang",
+   "Yingjie Li",
+   "Xiang Li",
+   "Chenlei Guo",
+   "Xing Fan",
+   "Ruhi Sarikaya",
+   "Heng Ji"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.767/",
+  "pdf": "https://aclanthology.org/2026.acl-long.767.pdf",
+  "category": "文本与检索上下文",
+  "branch": "提示词删减",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "参数化写入"
+  ],
+  "scenario": [
+   "Agent"
+  ],
+  "summary": "把 agent 上下文中的策略文档按类型分析后写入模型，减少推理时对完整策略文档的依赖；在论文自建基准上实现 97.3% 的提示缩减。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-budget-aware-routing",
+  "title": "Budget-Aware Routing for Long Clinical Text",
+  "authors": [
+   "Khizar Qureshi",
+   "Geoffrey Martin",
+   "Yifan Peng"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.2114/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.2114.pdf",
+  "category": "文本与检索上下文",
+  "branch": "抽取与摘要式压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "医学",
+   "长文档"
+  ],
+  "summary": "研究严格 token 预算下的上下文选择，将其建模为背包约束的子集选择，比较切分方式和选择方法，并提出兼顾相关性、覆盖和多样性的目标函数。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-self-correcting-rag",
+  "title": "Self-Correcting RAG: Enhancing Faithfulness via MMKP Context Selection and NLI-Guided MCTS",
+  "authors": [
+   "Shijia Xu",
+   "Zhou Wu",
+   "Xiaolong Jia",
+   "Yu Wang",
+   "Kai Liu",
+   "April Xiaowen Dong"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.findings-acl.1052/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1052.pdf",
+  "category": "文本与检索上下文",
+  "branch": "RAG 文档压缩",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "RAG"
+  ],
+  "summary": "把 RAG 的上下文选择建模为多维多选背包问题，在严格 token 预算下最大化信息密度、去除冗余；上下文选择是框架的一半，另一半是 MCTS 验证。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sada",
+  "title": "SADA: Bridging In-Context Learning and Fine-Tuning via State-Aligned Distillation Adapters",
+  "authors": [
+   "Wenhao Gao",
+   "Tianlong Wang",
+   "Wei Jia",
+   "Linhao Zhang",
+   "Aiwei Liu",
+   "Miao Fan",
+   "Zhou Xiao"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.1046/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1046.pdf",
+  "category": "潜在表示与跨模态记忆",
+  "branch": "固定容量与多模态记忆",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [
+   "参数化写入"
+  ],
+  "scenario": [],
+  "summary": "把上下文映射为临时适配器权重，并用状态对齐蒸馏使其内部状态贴近完整上下文模型，性能接近 in-context learning，同时显著降低内存和时延；论文还分析了参数化上下文压缩的适用条件。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sequential-kv-compression",
+  "title": "Reducing Peak Memory Usage for Modern Multimodal Large Language Model Pipelines",
+  "authors": [
+   "Junwan Kim",
+   "Hyunkyung Bae"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.1422/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.1422.pdf",
+  "category": "KV Cache",
+  "branch": "预算分配",
+  "modality": [
+   "图像",
+   "视频"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "针对视觉 token 进入 KV Cache 后的内存压力，在 prefill 过程中按结构做顺序输入压缩，以固定内存预算控制增长，大幅降低峰值内存。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-sparse-rl",
+  "title": "Sparse-RL: Breaking the Memory Wall in LLM Reinforcement Learning via Stable Sparse Rollouts",
+  "authors": [
+   "Sijia Luo",
+   "Xiaokang Zhang",
+   "Yuxuan Hu",
+   "Bohan Zhang",
+   "Ke Wang",
+   "Jinbo Su",
+   "Mengshu Sun",
+   "Lei Liang",
+   "Jing Zhang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.2000/",
+  "pdf": "https://aclanthology.org/2026.acl-long.2000.pdf",
+  "category": "KV Cache",
+  "branch": "补偿与恢复",
+  "modality": [
+   "文本"
+  ],
+  "mechanism": [],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "针对把 KV 压缩用于强化学习训练时的策略失配，用稀疏感知的拒绝采样和重要性重加权修正压缩带来的偏差；属于训练期压缩。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-v-skip",
+  "title": "Chain-of-Thought Compression Should Not Be Blind: V-Skip for Efficient Multimodal Reasoning via Dual-Path Anchoring",
+  "authors": [
+   "Dongxu Zhang",
+   "Yiding Sun",
+   "Cheng Tan",
+   "Wenbiao Yan",
+   "Ning Yang",
+   "Jihua Zhu",
+   "Haijun Zhang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.887/",
+  "pdf": "https://aclanthology.org/2026.acl-long.887.pdf",
+  "category": "Agent 历史与工作记忆",
+  "branch": "推理历史压缩",
+  "modality": [
+   "文本",
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [
+   "长推理"
+  ],
+  "summary": "针对文本式 token 剪枝误删视觉相关内容的问题，把多模态思维链的 token 裁剪建模为视觉锚定的信息瓶颈，结合语言惊奇度和跨模态注意力决定保留哪些 token。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-cares",
+  "title": "CARES: Context-Aware Resolution Selector for VLMs",
+  "authors": [
+   "Moshe Kimhi",
+   "Nimrod Shabtay",
+   "Raja Giryes",
+   "Chaim Baskin",
+   "Eli Schwartz"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.102/",
+  "pdf": "https://aclanthology.org/2026.acl-long.102.pdf",
+  "category": "图像视觉 token",
+  "branch": "指令引导聚焦",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [],
+  "scenario": [],
+  "summary": "针对视觉 token 占总 token 97-99% 的问题，用轻量模型为每个图像和查询预测最小充分输入分辨率；在五个多模态基准上保持性能，计算量最多减少 80%。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-halfv",
+  "title": "From Inheritance to Saturation: Disentangling the Evolution of Visual Redundancy for Architecture-Aware MLLM Inference Acceleration",
+  "authors": [
+   "Jiaqi Shi",
+   "Xulong Zhang",
+   "Yuechan Li",
+   "Xiaoyang Qu",
+   "Jianzong Wang"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.acl-long.787/",
+  "pdf": "https://aclanthology.org/2026.acl-long.787.pdf",
+  "category": "图像视觉 token",
+  "branch": "Token 剪枝",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "用截断矩阵熵区分通用视觉冗余和架构相关冗余，先统一剪枝再按架构自适应处理；在 Qwen25-VL 上保持 96.8% 性能，FLOPs 降低 4.1 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-regate",
+  "title": "ReGATE: Learning Faster and Better with Fewer Tokens in MLLMs",
+  "authors": [
+   "Chaoyu Li",
+   "Yogesh Kulkarni",
+   "Pooyan Fazli"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.2154/",
+  "pdf": "https://aclanthology.org/2026.acl-long.2154.pdf",
+  "category": "图像视觉 token",
+  "branch": "压缩感知训练",
+  "modality": [
+   "图像",
+   "视频"
+  ],
+  "mechanism": [
+   "筛选剪枝"
+  ],
+  "scenario": [],
+  "summary": "用教师模型的逐 token 指导和学生难度估计，在训练前向中跳过冗余 token；在 MVBench 上只用 38% 的 token 达到标准训练的峰值准确率。属于训练期压缩。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-caps",
+  "title": "Attention as Selector: Unlocking VLM Attention for Long Document Page Retrieval",
+  "authors": [
+   "Minfeng Zhu",
+   "Linxin Bao",
+   "Wei Chen",
+   "Linchao Zhu"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "主会",
+  "relevance": "扩展相关",
+  "url": "https://aclanthology.org/2026.acl-long.1117/",
+  "pdf": "https://aclanthology.org/2026.acl-long.1117.pdf",
+  "category": "图像视觉 token",
+  "branch": "文档与 GUI",
+  "modality": [
+   "图像"
+  ],
+  "mechanism": [
+   "筛选剪枝",
+   "按需检索"
+  ],
+  "scenario": [
+   "长文档",
+   "文档与 GUI"
+  ],
+  "summary": "针对长文档受上下文窗口和计算预算限制，用 VLM 内部的跨模态注意力选择相关页面，只把候选页送入后续问答；主线是页面检索。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
+  "acceptance": "官方确认"
+ },
+ {
+  "id": "acl-2026-affinity-pooling",
+  "title": "Do We Need Distinct Representations for Every Speech Token? Unveiling and Exploiting Redundancy in Large Speech Language Models",
+  "authors": [
+   "Bajian Xiang",
+   "Tingwei Guo",
+   "Xuan Chen",
+   "Yang Han"
+  ],
+  "year": 2026,
+  "venue": "ACL 2026",
+  "track": "Findings",
+  "relevance": "核心方法",
+  "url": "https://aclanthology.org/2026.findings-acl.742/",
+  "pdf": "https://aclanthology.org/2026.findings-acl.742.pdf",
+  "category": "视频与音视频",
+  "branch": "音视频联合压缩",
+  "modality": [
+   "音频"
+  ],
+  "mechanism": [
+   "合并聚类"
+  ],
+  "scenario": [],
+  "summary": "发现大语音语言模型深层存在冗余，用基于相似度的免训练 token 合并压缩语音表示；prefill FLOPs 减少 27.48%，长语音上内存节省约 1.7 倍。",
+  "added": "2026-11-08",
+  "source": [
+   "正式发表"
+  ],
   "acceptance": "官方确认"
  },
  {
