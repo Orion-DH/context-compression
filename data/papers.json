@@ -2131,8 +2131,8 @@
   "relevance": "扩展相关",
   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40264",
   "pdf": "https://ojs.aaai.org/index.php/AAAI/article/view/40264/44225",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本"
   ],
@@ -3463,8 +3463,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.76/",
   "pdf": "https://aclanthology.org/2026.acl-long.76.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -4847,7 +4847,7 @@
   "url": "https://aclanthology.org/2026.findings-acl.127/",
   "pdf": "https://aclanthology.org/2026.findings-acl.127.pdf",
   "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "branch": "结构化记忆",
   "modality": [
    "文本"
   ],
@@ -5069,7 +5069,7 @@
   "url": "https://aclanthology.org/2026.findings-acl.868/",
   "pdf": "https://aclanthology.org/2026.findings-acl.868.pdf",
   "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "branch": "轨迹压缩",
   "modality": [
    "文本"
   ],
@@ -11028,8 +11028,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10009358",
   "pdf": "https://openreview.net/forum?id=T1h5em349L",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -11341,8 +11341,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10011666",
   "pdf": "https://openreview.net/forum?id=3As6AQ9ELI",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -13486,8 +13486,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/60860",
   "pdf": "https://openreview.net/forum?id=vz23iIMvyd",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -16305,8 +16305,8 @@
   "relevance": "扩展相关",
   "url": "https://icml.cc/virtual/2026/poster/64887",
   "pdf": "https://openreview.net/forum?id=IpeH08AJ9P",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -16687,8 +16687,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/61068",
   "pdf": "https://openreview.net/forum?id=tyul8kXaJU",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -16719,8 +16719,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/61752",
   "pdf": "https://openreview.net/forum?id=nERMuZtneC",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -16757,8 +16757,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/62290",
   "pdf": "https://openreview.net/forum?id=hwJ2SZtVij",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -16793,8 +16793,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/65014",
   "pdf": "https://openreview.net/forum?id=Hn81xuLaXY",
-  "category": "潜在表示与跨模态记忆",
-  "branch": "软提示与压缩 token",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本"
   ],
@@ -16829,8 +16829,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/63716",
   "pdf": "https://openreview.net/forum?id=UM6ifyC63p",
-  "category": "潜在表示与跨模态记忆",
-  "branch": "文本转图像",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本",
    "图像"
@@ -17165,8 +17165,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/62920",
   "pdf": "https://openreview.net/forum?id=bsgrUQ0RIY",
-  "category": "潜在表示与跨模态记忆",
-  "branch": "软提示与压缩 token",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本"
   ],
@@ -17199,8 +17199,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/61485",
   "pdf": "https://openreview.net/forum?id=piXLPucLRA",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -17235,8 +17235,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/64022",
   "pdf": "https://openreview.net/forum?id=RciRcJ9LHw",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -17266,8 +17266,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/64229",
   "pdf": "https://openreview.net/forum?id=PlHlnsoaJc",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -17305,8 +17305,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/61398",
   "pdf": "https://openreview.net/forum?id=qeeD6aZLLX",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -17338,8 +17338,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/65968",
   "pdf": "https://openreview.net/forum?id=8Oc3Mx754M",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -17374,8 +17374,8 @@
   "relevance": "核心方法",
   "url": "https://icml.cc/virtual/2026/poster/61221",
   "pdf": "https://openreview.net/forum?id=sXRZoMhNFo",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本",
    "图像"
@@ -18143,8 +18143,8 @@
   "source": [
    "HF Daily"
   ],
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -18297,8 +18297,8 @@
   "source": [
    "HF Daily"
   ],
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "迭代摘要与历史清理",
   "modality": [
    "文本"
   ],
@@ -19153,8 +19153,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10008526",
   "pdf": "https://openreview.net/forum?id=cGLqQfS5wH",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -19267,8 +19267,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10010844",
   "pdf": "https://openreview.net/forum?id=CbK7lYbmv8",
-  "category": "潜在表示与跨模态记忆",
-  "branch": "软提示与压缩 token",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本"
   ],
@@ -19713,8 +19713,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10010156",
   "pdf": "https://openreview.net/forum?id=K5A2jBmEBK",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -19746,8 +19746,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10011162",
   "pdf": "https://openreview.net/forum?id=8xSU8Oscvg",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -19778,8 +19778,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10008733",
   "pdf": "https://openreview.net/forum?id=a9dngZLqGS",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -19815,8 +19815,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10008026",
   "pdf": "https://openreview.net/forum?id=hj9eKpqxQl",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -19845,8 +19845,8 @@
   "relevance": "核心方法",
   "url": "https://iclr.cc/virtual/2026/poster/10010398",
   "pdf": "https://openreview.net/forum?id=HLc2igXEA3",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -20857,8 +20857,8 @@
    "正式发表",
    "HF Daily"
   ],
-  "category": "潜在表示与跨模态记忆",
-  "branch": "文本转图像",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本",
    "图像"
@@ -21351,8 +21351,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.887/",
   "pdf": "https://aclanthology.org/2026.acl-long.887.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本",
    "图像"
@@ -21544,8 +21544,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1828/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1828.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -21579,8 +21579,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.94/",
   "pdf": "https://aclanthology.org/2026.findings-acl.94.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -21611,8 +21611,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1961/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1961.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21649,8 +21649,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.281/",
   "pdf": "https://aclanthology.org/2026.findings-acl.281.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21681,8 +21681,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1128/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1128.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21713,8 +21713,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.196/",
   "pdf": "https://aclanthology.org/2026.findings-acl.196.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21759,8 +21759,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1545/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1545.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -21792,8 +21792,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1684/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1684.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21826,8 +21826,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.146/",
   "pdf": "https://aclanthology.org/2026.acl-long.146.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -21862,8 +21862,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.697/",
   "pdf": "https://aclanthology.org/2026.findings-acl.697.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -21900,8 +21900,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.2155/",
   "pdf": "https://aclanthology.org/2026.findings-acl.2155.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21934,8 +21934,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.25/",
   "pdf": "https://aclanthology.org/2026.acl-long.25.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -21970,8 +21970,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1333/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1333.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22001,8 +22001,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1335/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1335.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22042,8 +22042,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.1856/",
   "pdf": "https://aclanthology.org/2026.acl-long.1856.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22078,8 +22078,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.1520/",
   "pdf": "https://aclanthology.org/2026.findings-acl.1520.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22112,8 +22112,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-industry.152/",
   "pdf": "https://aclanthology.org/2026.acl-industry.152.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22146,8 +22146,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.2009/",
   "pdf": "https://aclanthology.org/2026.acl-long.2009.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "步骤剪枝与精简",
   "modality": [
    "文本"
   ],
@@ -22185,8 +22185,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.1845/",
   "pdf": "https://aclanthology.org/2026.acl-long.1845.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22222,8 +22222,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.1047/",
   "pdf": "https://aclanthology.org/2026.acl-long.1047.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22255,8 +22255,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.1386/",
   "pdf": "https://aclanthology.org/2026.acl-long.1386.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22290,8 +22290,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.findings-acl.626/",
   "pdf": "https://aclanthology.org/2026.findings-acl.626.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22323,8 +22323,8 @@
   "relevance": "核心方法",
   "url": "https://aclanthology.org/2026.acl-long.129/",
   "pdf": "https://aclanthology.org/2026.acl-long.129.pdf",
-  "category": "Agent 历史与工作记忆",
-  "branch": "推理历史压缩",
+  "category": "思维链压缩",
+  "branch": "长度与偏好优化",
   "modality": [
    "文本"
   ],
@@ -22806,8 +22806,8 @@
    "正式发表",
    "HF Daily"
   ],
-  "category": "潜在表示与跨模态记忆",
-  "branch": "文本转图像",
+  "category": "思维链压缩",
+  "branch": "潜在与图像化压缩",
   "modality": [
    "文本",
    "图像"
